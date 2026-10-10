@@ -30,58 +30,71 @@ export default function Skills() {
   return (
     <section id="skills" className="skills-section">
       <div className="section-container">
-        <div className="section-header text-center">
-          <span className="section-eyebrow">
-            <Sparkles size={14} className="inline mr-1.5" />
-            Technical Stack
-          </span>
-          <h2 className="section-title">Skills & Technologies</h2>
-          <p className="section-subtitle">
-            Languages, frameworks, databases, and DevOps tools used across my project portfolio.
-          </p>
-        </div>
-
-        <div className="skills-categories-grid">
-          {SKILLS_CATEGORIES.map((cat, idx) => (
-            <div key={idx} className="skills-category-card">
-              <div className="cat-card-header">
-                <div className="cat-icon-wrap">{getCategoryMascot(cat.title)}</div>
-                <h3>{cat.title}</h3>
-              </div>
-
-              <div className="cat-skills-wrap">
-                {cat.skills.map((skill, sIdx) => {
-                  const tooltipKey = `${cat.title}-${skill.name}`;
-                  const isHovered = activeTooltip === tooltipKey;
-
-                  return (
-                    <div
-                      key={sIdx}
-                      className={`skill-pill ${isHovered ? 'hovered' : ''}`}
-                      onMouseEnter={() => setActiveTooltip(tooltipKey)}
-                      onMouseLeave={() => setActiveTooltip(null)}
-                      tabIndex={0}
-                      role="tooltip"
-                      aria-label={`${skill.name}: Used in ${skill.usedIn}`}
-                    >
-                      <span className="skill-dot"></span>
-                      <span className="skill-name">{skill.name}</span>
-
-                      {isHovered && (
-                        <div className="skill-tooltip-bubble bounce-in">
-                          <div className="tooltip-title">{skill.name}</div>
-                          <div className="tooltip-context">
-                            <span className="used-label">Used in:</span> {skill.usedIn}
-                          </div>
-                          <div className="tooltip-arrow"></div>
-                        </div>
-                      )}
-                    </div>
-                  );
-                })}
-              </div>
+        <div className="os-window-card">
+          <div className="os-window-header">
+            <div className="os-window-path">
+              <span>C:\GIFTY\skills</span>
             </div>
-          ))}
+            <div className="os-window-controls">
+              <span className="os-close-btn">x</span>
+            </div>
+          </div>
+
+          <div className="os-window-body">
+            <div className="section-header text-center">
+              <span className="section-eyebrow">
+                <Sparkles size={14} className="inline mr-1.5" />
+                Technical Stack
+              </span>
+              <h2 className="section-title">Skills & Tools</h2>
+              <p className="section-subtitle">
+                Frontend frameworks, AI models, languages, and developer tools used across my project portfolio.
+              </p>
+            </div>
+
+            <div className="skills-categories-grid">
+              {SKILLS_CATEGORIES.map((cat, idx) => (
+                <div key={idx} className="skills-category-card">
+                  <div className="cat-card-header">
+                    <div className="cat-icon-wrap">{getCategoryMascot(cat.title)}</div>
+                    <h3>{cat.title}</h3>
+                  </div>
+
+                  <div className="cat-skills-wrap">
+                    {cat.skills.map((skill, sIdx) => {
+                      const tooltipKey = `${cat.title}-${skill.name}`;
+                      const isHovered = activeTooltip === tooltipKey;
+
+                      return (
+                        <div
+                          key={sIdx}
+                          className={`skill-pill ${isHovered ? 'hovered' : ''}`}
+                          onMouseEnter={() => setActiveTooltip(tooltipKey)}
+                          onMouseLeave={() => setActiveTooltip(null)}
+                          tabIndex={0}
+                          role="tooltip"
+                          aria-label={`${skill.name}: Used in ${skill.usedIn}`}
+                        >
+                          <span className="skill-dot"></span>
+                          <span className="skill-name">{skill.name}</span>
+
+                          {isHovered && (
+                            <div className="skill-tooltip-bubble bounce-in">
+                              <div className="tooltip-title">{skill.name}</div>
+                              <div className="tooltip-context">
+                                <span className="used-label">Used in:</span> {skill.usedIn}
+                              </div>
+                              <div className="tooltip-arrow"></div>
+                            </div>
+                          )}
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>

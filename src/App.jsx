@@ -12,6 +12,8 @@ import Footer from './components/Footer';
 import ResumeModal from './components/ResumeModal';
 import TerminalModal from './components/TerminalModal';
 import EasterEggs from './components/EasterEggs';
+import DesktopFolderShortcuts from './components/DesktopFolderShortcuts';
+import SocialBannerStrip from './components/SocialBannerStrip';
 import './styles/index.css';
 
 export default function App() {
@@ -36,14 +38,23 @@ export default function App() {
         setDarkMode={setDarkMode}
       />
 
+      <DesktopFolderShortcuts onOpenResume={() => setResumeOpen(true)} />
+
       <main>
         <Hero onOpenTerminal={() => setTerminalOpen(true)} />
+        <SocialBannerStrip onOpenTerminal={() => setTerminalOpen(true)} />
+        
         <About />
+        <SocialBannerStrip onOpenTerminal={() => setTerminalOpen(true)} />
+
         <Projects />
+        <SocialBannerStrip onOpenTerminal={() => setTerminalOpen(true)} />
+
         <Skills />
         <EngineeringWorkflow />
         <DeveloperJourney />
         <GitHubSection />
+
         <Contact />
       </main>
 
