@@ -65,19 +65,33 @@ export default function Achievements() {
 
                   <div className="achievement-footer">
                     <span className="project-tag">Project: <strong>{item.projectRef}</strong></span>
-                    {item.github && (
-                      <a
-                        href={item.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="achievement-link-btn"
-                        title="View Hackathon Repository"
-                      >
-                        <GithubIcon size={16} />
-                        <span>View Repository</span>
-                        <ArrowUpRight size={14} />
-                      </a>
-                    )}
+                    <div className="achievement-links-group" style={{ display: 'flex', gap: '8px' }}>
+                      {item.live && (
+                        <a
+                          href={item.live}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="achievement-link-btn"
+                          title="View Live Platform"
+                        >
+                          <ExternalLink size={14} />
+                          <span>Live Demo</span>
+                        </a>
+                      )}
+                      {item.github && (
+                        <a
+                          href={item.github}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="achievement-link-btn"
+                          title="View Hackathon Repository"
+                        >
+                          <GithubIcon size={16} />
+                          <span>View Code</span>
+                          <ArrowUpRight size={14} />
+                        </a>
+                      )}
+                    </div>
                   </div>
                 </div>
               ))}

@@ -61,6 +61,36 @@ export const PROJECTS_DATA = [
     featured: true
   },
   {
+    id: 'bluesprout',
+    title: 'BlueSprout — Rooftop Rainwater & AI Water Assessment',
+    category: 'Full-Stack / AI Water Conservation / SIH 2025',
+    filterCategory: 'AI',
+    secondaryFilters: ['Frontend', 'Backend'],
+    badge: 'SIH 2025 Internal Round Qualified',
+    shortDescription: 'Smart India Hackathon 2025 web platform enabling AI-powered rooftop rainwater harvesting assessments, catchment calculation, and community water conservation tracking.',
+    mascot: 'cloud',
+    iconName: 'Droplets',
+    problem: 'Urban communities and homeowners lack accessible tools to calculate their rooftop rainwater collection potential or determine suitable harvesting filtration setups, accelerating urban groundwater depletion.',
+    solution: 'Designed and built an interactive web solution providing AI-driven rooftop image assessment, manual mathematical catchment potential calculators, and gamified conservation tracking for households and educational campuses.',
+    architecture: 'Interactive Frontend UI (HTML5 / CSS3 / JavaScript) -> Rooftop Image Assessment Logic & Area Calculation Engine -> Local Rainfall & Catchment Algorithms -> Water Savings Analytics Dashboard.',
+    technologies: [
+      'HTML5', 'CSS3', 'JavaScript', 'AI Vision Assessment', 'FontAwesome', 'Data Analytics', 'Responsive Design'
+    ],
+    highlights: [
+      'Smart India Hackathon 2025 Internal Round Qualified',
+      'AI-powered rooftop photo upload & system recommendation module',
+      'Mathematical rainwater catchment potential calculator based on roof area & local precipitation',
+      'Water savings tracker visualizing conservation progress and environmental impact',
+      'Interactive educational game educating communities on water conservation'
+    ],
+    learned: 'Building high-converting educational interfaces, translating hydrological calculation formulas into user-friendly UI sliders, and rapid team delivery during hackathon selection.',
+    challenges: 'Designing intuitive calculator inputs for non-technical homeowners to estimate roof slope, area, and run-off coefficients accurately.',
+    future: 'Integrate IoT rain gauge hardware telemetry and municipal water-table level APIs.',
+    github: 'https://github.com/kartikey369-ind/BlueSprout-SIH25',
+    demo: 'https://kartikey369-ind.github.io/BlueSprout-SIH25/',
+    featured: true
+  },
+  {
     id: 'smart-belt',
     title: 'SmartBelt — Wearable Health & Safety System',
     category: 'IoT / Wearable Hardware / Embedded / Interdisciplinary',

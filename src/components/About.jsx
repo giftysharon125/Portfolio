@@ -29,7 +29,7 @@ export default function About() {
       highlights: [
         'Specializing in Frontend Engineering & Applied AI Systems.',
         'Core Academic Foundation: Data Structures & Algorithms, Object-Oriented Programming, DBMS, Computer Networks, and Operating Systems.',
-        'Smart India Hackathon (SIH) Internal Top Performer & National Hackathon Rank 7 Finalist.'
+        'Double Smart India Hackathon (SIH) Internal Qualifier (SIH 2025 BlueSprout & SIH 2026 SmartBelt Top Performer) & National Hackathon Rank 7 Finalist.'
       ]
     },
     {
@@ -83,7 +83,7 @@ export default function About() {
     {
       icon: Rocket,
       title: 'Hackathon Competitor',
-      desc: 'Thriving in high-pressure team sprints, placing Rank 7 nationally and winning internal college rounds in Smart India Hackathon.'
+      desc: 'Double SIH internal qualifier (2025 & 2026) and Top 12 National Finalist (Rank 7) out of nationwide engineering teams.'
     }
   ];
 

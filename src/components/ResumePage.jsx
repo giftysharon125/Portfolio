@@ -166,14 +166,30 @@ export default function ResumePage({ onBack }) {
                     <div className="retro-bullet-dot"></div>
                     <div className="retro-entry-content">
                       <div className="retro-entry-meta">
-                        <span className="retro-date-tag">2024</span>
-                        <span className="retro-rank-tag">College Top Performer</span>
+                        <span className="retro-date-tag">2026</span>
+                        <span className="retro-rank-tag">SIH 2026 Top Performer</span>
                       </div>
-                      <h3 className="retro-entry-title">Smart India Hackathon (SIH) — Internal Top Performer</h3>
+                      <h3 className="retro-entry-title">Smart India Hackathon (SIH 2026) — College Top Performer</h3>
                       <p className="retro-entry-subtitle">SmartBelt Wearable IoT Fall & Safety Distress System</p>
                       <ul className="retro-entry-points">
                         <li>Qualified internal selection as Top Performers in our college with an interdisciplinary team.</li>
                         <li>Engineered sensor telemetry, emergency trigger logic, and automated SMS/WhatsApp guardian notification dispatch.</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div className="retro-entry-card">
+                    <div className="retro-bullet-dot"></div>
+                    <div className="retro-entry-content">
+                      <div className="retro-entry-meta">
+                        <span className="retro-date-tag">2025</span>
+                        <span className="retro-rank-tag">SIH 2025 Qualified</span>
+                      </div>
+                      <h3 className="retro-entry-title">Smart India Hackathon (SIH 2025) — Internal Round Qualified</h3>
+                      <p className="retro-entry-subtitle">BlueSprout Rooftop Rainwater & AI Water Assessment Platform</p>
+                      <ul className="retro-entry-points">
+                        <li>Qualified internal college selection round for Smart India Hackathon 2025 with the BlueSprout platform.</li>
+                        <li>Built responsive web application featuring AI rooftop rainwater potential assessment, catchment calculations, and community savings tracking.</li>
                       </ul>
                     </div>
                   </div>
@@ -211,6 +227,20 @@ export default function ResumePage({ onBack }) {
                       <ul className="retro-entry-points">
                         <li>Designed goal-directed autonomous agents aggregating infrastructure telemetry to forecast equipment degradation.</li>
                         <li>Delivered automated institutional recommendation reports and predictive resource allocation models.</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div className="retro-entry-card">
+                    <div className="retro-bullet-dot"></div>
+                    <div className="retro-entry-content">
+                      <div className="retro-entry-meta">
+                        <span className="retro-tech-tag">HTML5 · CSS3 · JavaScript · AI Vision · Data Analytics</span>
+                      </div>
+                      <h3 className="retro-entry-title">BlueSprout — Rooftop Rainwater & AI Water Assessment</h3>
+                      <ul className="retro-entry-points">
+                        <li>Smart India Hackathon 2025 internal round qualified project for rooftop water conservation.</li>
+                        <li>Built AI rooftop image recommendation module, manual catchment potential calculator, and water savings tracking dashboard.</li>
                       </ul>
                     </div>
                   </div>

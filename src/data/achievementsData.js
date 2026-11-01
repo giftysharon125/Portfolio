@@ -1,21 +1,40 @@
 export const ACHIEVEMENTS_DATA = [
   {
-    id: 'sih-top-performer',
-    title: 'Smart India Hackathon (SIH) — Top Performer',
-    event: 'Smart India Hackathon · Internal College Selection Round',
-    badge: 'College Top Performers',
+    id: 'sih-2026-top-performer',
+    title: 'Smart India Hackathon (SIH 2026) — Top Performer',
+    event: 'Smart India Hackathon 2026 · Internal College Selection Round',
+    badge: 'SIH 2026 Qualified & Top Performer',
     role: 'Interdisciplinary Team Member & Core Developer',
     projectRef: 'SmartBelt',
-    date: '2024',
+    date: '2026',
     icon: 'Trophy',
     accentColor: '#D96B27',
-    summary: 'Qualified internal selection round and secured Top Performer distinction for SmartBelt — an interdisciplinary IoT wearable smart safety belt designed with embedded sensors and automated emergency alert dispatch.',
+    summary: 'Qualified the internal selection round and secured Top Performer distinction for SmartBelt — an interdisciplinary IoT wearable smart safety belt designed with embedded sensors and automated emergency alert dispatch.',
     takeaways: [
       'Collaborated effectively across electronics, hardware, and computer science domains.',
       'Demonstrated working hardware-to-cloud prototype under strict hackathon evaluation criteria.',
       'Recognized for high practical utility and potential social impact.'
     ],
     github: 'https://github.com/giftysharon125/SmartBelt.git'
+  },
+  {
+    id: 'sih-2025-bluesprout',
+    title: 'Smart India Hackathon (SIH 2025) — Internal Round Qualified',
+    event: 'Smart India Hackathon 2025 · Internal College Selection Round',
+    badge: 'SIH 2025 Internal Round Qualified',
+    role: 'Frontend & UI Developer',
+    projectRef: 'BlueSprout',
+    date: '2025',
+    icon: 'Trophy',
+    accentColor: '#0284C7',
+    summary: 'Successfully qualified the college internal selection round for Smart India Hackathon 2025 with BlueSprout — an AI-powered rooftop rainwater harvesting, water conservation tracking, and assessment web platform.',
+    takeaways: [
+      'Engineered interactive frontend flows for AI rooftop assessment and manual catchment potential calculators.',
+      'Designed community water savings progress tracker and educational engagement modules.',
+      'Selected and endorsed during competitive college-level SIH 2025 internal screening.'
+    ],
+    github: 'https://github.com/kartikey369-ind/BlueSprout-SIH25',
+    live: 'https://kartikey369-ind.github.io/BlueSprout-SIH25/'
   },
   {
     id: 'national-hackathon-finalist',

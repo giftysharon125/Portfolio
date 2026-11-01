@@ -24,10 +24,10 @@ export const JOURNEY_TIMELINE = [
     icon: 'Server'
   },
   {
-    year: '2024',
-    title: 'Hackathon Top Performer & Finalist Honors',
-    role: 'Interdisciplinary & AI Engineer',
-    description: 'Secured Top Performer in Smart India Hackathon (SIH) internal round for SmartBelt, and achieved Rank 7 (Top 12 Finalists) nationally with the Campus Infrastructure Decision Support AI Agent.',
+    year: '2025 - 2026',
+    title: 'Double SIH Qualifier & National Finalist Honors',
+    role: 'Frontend & AI System Architect',
+    description: 'Qualified internal selection in Smart India Hackathon twice: SIH 2025 (BlueSprout Water Platform) & SIH 2026 (SmartBelt Top Performer), alongside securing Rank 7 nationally with Campus Infrastructure AI Agent.',
     badge: 'Hackathons & Honors',
     icon: 'Trophy'
   },
