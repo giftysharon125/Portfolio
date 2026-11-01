@@ -7,11 +7,8 @@ import {
   Calendar,
   CheckCircle2,
   Code2,
-  Cpu,
-  Brain,
-  Rocket,
-  Compass,
-  Laptop
+  Sparkle,
+  Compass
 } from 'lucide-react';
 import { CoffeeMascot } from './CuteMascots';
 
@@ -65,29 +62,6 @@ export default function About() {
     }
   ];
 
-  const corePillars = [
-    {
-      icon: Code2,
-      title: 'Frontend Craftsmanship',
-      desc: 'Crafting responsive, delightful interfaces in React with micro-interactions, clean state management, and modern CSS architectures.'
-    },
-    {
-      icon: Brain,
-      title: 'Practical AI & RAG',
-      desc: 'Integrating real intelligence using LangChain, FAISS vector embeddings, and LLM APIs to turn messy data into intuitive decision support.'
-    },
-    {
-      icon: Cpu,
-      title: 'Interdisciplinary IoT',
-      desc: 'Connecting software with hardware — bridging ESP32 microcontrollers, embedded sensor telemetry, and cloud emergency notification pipelines.'
-    },
-    {
-      icon: Rocket,
-      title: 'Hackathon Competitor',
-      desc: 'Double SIH internal qualifier (2025 & 2026) and Top 12 National Finalist (Rank 7) out of nationwide engineering teams.'
-    }
-  ];
-
   return (
     <section id="about" className="about-section">
       <div className="section-container">
@@ -113,50 +87,28 @@ export default function About() {
               </p>
             </div>
 
-            {/* Narrative & Core Pillars Row */}
-            <div className="about-enhanced-grid">
-              <div className="about-narrative-card">
-                <h3>Engineering With Curiosity & Purpose</h3>
+            {/* Narrative Hero Card - Centered, Spacious & Clean */}
+            <div className="about-narrative-clean">
+              <div className="about-narrative-card full-width">
+                <div className="narrative-badge">
+                  <span>Frontend Engineering × Intelligent AI</span>
+                </div>
+                <h3>Engineering With Curiosity, Design & Purpose</h3>
                 <p>
-                  I am a <strong>Computer Science Engineering student</strong> specializing in <strong>Frontend Engineering</strong> with a strong passion for developing <strong>AI-powered applications</strong>.
+                  I am a <strong>Computer Science Engineering student</strong> at <strong>Anil Neerukonda Institute of Technology and Sciences (ANITS)</strong> specializing in <strong>Frontend Engineering</strong> with a deep passion for building <strong>Applied AI Applications</strong>.
                 </p>
                 <p>
-                  I thrive at the intersection of design and intelligence — building user experiences that feel fluid, responsive, and natural in modern React ecosystems, while architecting smart backend pipelines with LangChain, FAISS vector search, and multi-agent frameworks.
+                  I thrive at the intersection of design and intelligence — building user experiences that feel fluid, responsive, and natural in modern React ecosystems, while architecting smart backend pipelines with LangChain, FAISS vector search, and autonomous multi-agent frameworks.
                 </p>
                 <p>
-                  Whether it is designing an emergency safety system with WhatsApp webhooks (Project Saathi), engineering an autonomous campus infrastructure decision agent that ranked 7th nationally, or building an interdisciplinary IoT wearable for Smart India Hackathon, I love turning complex challenges into simple, human-centered software.
+                  Whether it is designing an emergency safety system with WhatsApp webhooks (Project Saathi), engineering an autonomous campus infrastructure decision support agent that ranked 7th nationally, or building an interdisciplinary IoT wearable for Smart India Hackathon, I love taking complex real-world challenges and transforming them into accessible, human-centered software.
                 </p>
 
                 <div className="about-mascot-footer">
-                  <CoffeeMascot size={40} />
+                  <CoffeeMascot size={42} />
                   <div className="mascot-quote">
                     <span>"Driven by curiosity, clean code, and solving real user problems."</span>
                   </div>
-                </div>
-              </div>
-
-              {/* What Drives Me / Pillars */}
-              <div className="about-pillars-card">
-                <div className="pillars-header">
-                  <h3>What Drives My Work</h3>
-                  <span className="pillars-tag">Engineering Values</span>
-                </div>
-
-                <div className="pillars-list">
-                  {corePillars.map((pillar, idx) => {
-                    const PillarIcon = pillar.icon;
-                    return (
-                      <div key={idx} className="pillar-item">
-                        <div className="pillar-icon-box">
-                          <PillarIcon size={20} className="text-amber-600" />
-                        </div>
-                        <div className="pillar-text">
-                          <h4>{pillar.title}</h4>
-                          <p>{pillar.desc}</p>
-                        </div>
-                      </div>
-                    );
-                  })}
                 </div>
               </div>
             </div>
