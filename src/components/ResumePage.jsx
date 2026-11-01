@@ -98,7 +98,7 @@ export default function ResumePage({ onBack }) {
             <div className="retro-avatar-box">
               <div className="retro-avatar-circle">
                 <img 
-                  src="/images/gifty-hero-portrait.png" 
+                  src="/images/profile-real-enhanced.jpg" 
                   alt="Gifty Sharon" 
                   className="retro-resume-avatar-img"
                   onError={(e) => {

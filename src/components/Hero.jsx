@@ -96,15 +96,15 @@ export default function Hero({ onOpenTerminal }) {
             </div>
 
             <div className="hero-portrait-showcase">
-              <div className="hero-portrait-card">
-                <div className="hero-portrait-frame">
+              <div className="hero-portrait-card fullbody">
+                <div className="hero-portrait-frame fullbody-standing">
                   <img 
-                    src="/images/gifty-hero-portrait.png" 
+                    src="/images/gifty-standing-character.png" 
                     alt="Gifty Sharon — Frontend Engineer & AI Developer" 
-                    className="hero-portrait-photo"
+                    className="hero-portrait-photo standing"
                     onError={(e) => {
                       e.target.onerror = null;
-                      e.target.src = '/images/profile.jpg';
+                      e.target.src = '/images/profile-real-enhanced.jpg';
                     }}
                   />
                   <div className="hero-portrait-badge top-left">

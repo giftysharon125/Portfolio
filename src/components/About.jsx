@@ -95,7 +95,7 @@ export default function About() {
                 <div className="about-portrait-wrap">
                   <div className="about-portrait-frame">
                     <img 
-                      src="/images/gifty-hero-portrait.png" 
+                      src="/images/profile-real-enhanced.jpg" 
                       alt="Gifty Sharon — Frontend & AI Engineer" 
                       className="about-portrait-img"
                       onError={(e) => {
