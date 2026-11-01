@@ -2666,8 +2666,149 @@ html.dark .navbar-header {
 }
 
 /* ==========================================================================
-   EDUCATION CARDS SECTION IN ABOUT
+   ABOUT ENHANCED GRID & VALUE PILLARS
    ========================================================================== */
+
+.about-enhanced-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 28px;
+}
+
+.about-pillars-card {
+  background: var(--bg-card);
+  border: 2px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  box-shadow: 2px 2px 0px rgba(74, 86, 58, 0.15);
+  display: flex;
+  flex-direction: column;
+}
+
+.pillars-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+  padding-bottom: 10px;
+  border-bottom: 1.5px solid var(--border-color);
+}
+
+.pillars-header h3 {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--text-main);
+}
+
+.pillars-tag {
+  font-size: 0.74rem;
+  font-weight: 800;
+  color: var(--accent-terracotta);
+  background: var(--accent-terracotta-light);
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--accent-terracotta);
+}
+
+.pillars-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.pillar-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 10px 14px;
+  background: var(--bg-secondary);
+  border: 1.5px solid var(--border-color);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+}
+
+.pillar-item:hover {
+  background: var(--bg-card);
+  border-color: var(--accent-terracotta);
+  transform: translateX(3px);
+  box-shadow: 2px 2px 0px rgba(74, 86, 58, 0.15);
+}
+
+.pillar-icon-box {
+  width: 38px;
+  height: 38px;
+  border-radius: var(--radius-md);
+  background: var(--accent-terracotta-light);
+  border: 1.5px solid var(--accent-terracotta);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.pillar-text h4 {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 3px;
+}
+
+.pillar-text p {
+  font-size: 0.84rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+}
+
+/* ==========================================================================
+   REAL LOGO BADGES IN RESUME (Python, Java, React, C++, etc.)
+   ========================================================================== */
+
+.retro-real-logos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(84px, 1fr));
+  gap: 12px;
+}
+
+.retro-real-logo-card {
+  padding: 10px 6px 8px 6px;
+  border-radius: var(--radius-md);
+  border: 2px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.15);
+  transition: all var(--transition-fast);
+  cursor: pointer;
+  user-select: none;
+}
+
+.retro-real-logo-card:hover {
+  transform: scale(1.08) translateY(-3px);
+  box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.25);
+}
+
+.real-logo-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.15));
+}
+
+.real-logo-name {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: #1F2937;
+  text-align: center;
+  line-height: 1.1;
+}
+
+html.dark .real-logo-name {
+  color: #111827;
+}
+
+/* Education Cards Section in About */
 
 .education-timeline-section {
   margin-top: 48px;

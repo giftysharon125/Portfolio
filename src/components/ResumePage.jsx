@@ -2,29 +2,24 @@ import React from 'react';
 import { 
   ArrowLeft, 
   Download, 
-  ExternalLink, 
   Printer, 
-  Mail, 
-  Phone, 
-  MapPin, 
-  Linkedin, 
-  Github, 
-  Trophy, 
-  Award, 
-  GraduationCap, 
-  School, 
-  Building2, 
-  Briefcase, 
-  Code, 
-  Cpu, 
-  CheckCircle2, 
-  Sparkles,
-  Layers,
-  Terminal,
-  Globe
+  Calendar,
+  CheckCircle2
 } from 'lucide-react';
-import { GithubIcon, LinkedinIcon } from './SocialIcons';
 import CuteComputer from './CuteComputer';
+import { 
+  PythonLogo, 
+  JavaLogo, 
+  ReactLogo, 
+  JavaScriptLogo, 
+  CppLogo, 
+  DockerLogo, 
+  NodeLogo, 
+  GitLogo, 
+  MongoLogo, 
+  VSCodeLogo, 
+  LangChainLogo 
+} from './TechLogos';
 
 export default function ResumePage({ onBack }) {
   const handlePrint = () => {
@@ -41,18 +36,19 @@ export default function ResumePage({ onBack }) {
     document.body.removeChild(link);
   };
 
-  // Tech tools with colored badges & icon representations inspired by reference
+  // Real Skill Badges with SVG Logos inspired by the reference (Ai, Ps, Pr, etc.)
   const toolLogos = [
-    { name: 'React', label: 'React', bg: '#087EA4', color: '#FFFFFF' },
-    { name: 'Python', label: 'Python', bg: '#3776AB', color: '#FFD43B' },
-    { name: 'LangChain', label: 'LangChain', bg: '#1C3C3C', color: '#10B981' },
-    { name: 'Node.js', label: 'Node', bg: '#339933', color: '#FFFFFF' },
-    { name: 'Docker', label: 'Docker', bg: '#2496ED', color: '#FFFFFF' },
-    { name: 'Git', label: 'Git', bg: '#F05032', color: '#FFFFFF' },
-    { name: 'VS Code', label: 'VS Code', bg: '#007ACC', color: '#FFFFFF' },
-    { name: 'MongoDB', label: 'MongoDB', bg: '#47A248', color: '#FFFFFF' },
-    { name: 'FastAPI', label: 'FastAPI', bg: '#009688', color: '#FFFFFF' },
-    { name: 'Linux', label: 'Linux', bg: '#FCC624', color: '#000000' }
+    { name: 'Python', component: <PythonLogo size={28} />, bg: '#EEF3F8', border: '#3776AB' },
+    { name: 'Java', component: <JavaLogo size={28} />, bg: '#FDF3EE', border: '#E76F00' },
+    { name: 'React', component: <ReactLogo size={28} />, bg: '#EAF7FD', border: '#087EA4' },
+    { name: 'JavaScript', component: <JavaScriptLogo size={28} />, bg: '#FEFBE8', border: '#EAB308' },
+    { name: 'C++', component: <CppLogo size={28} />, bg: '#EBF2FA', border: '#00599C' },
+    { name: 'LangChain', component: <LangChainLogo size={28} />, bg: '#E8F5EE', border: '#10B981' },
+    { name: 'Docker', component: <DockerLogo size={28} />, bg: '#EBF5FC', border: '#2496ED' },
+    { name: 'Node.js', component: <NodeLogo size={28} />, bg: '#EFF8EF', border: '#339933' },
+    { name: 'MongoDB', component: <MongoLogo size={28} />, bg: '#EFF8EF', border: '#47A248' },
+    { name: 'Git', component: <GitLogo size={28} />, bg: '#FDF1EF', border: '#F05032' },
+    { name: 'VS Code', component: <VSCodeLogo size={28} />, bg: '#EDF5FA', border: '#007ACC' }
   ];
 
   const languages = [
@@ -140,7 +136,7 @@ export default function ResumePage({ onBack }) {
 
           {/* Two-Column Structured Resume Content */}
           <div className="retro-resume-columns">
-            {/* Left Column: Projects, Achievements, Experience */}
+            {/* Left Column: Achievements, Experience, Projects */}
             <div className="retro-col-main">
               {/* ACHIEVEMENTS & HONORS */}
               <div className="retro-section-group">
@@ -263,9 +259,9 @@ export default function ResumePage({ onBack }) {
               </div>
             </div>
 
-            {/* Right Column: Education, Tools, Skills, Languages */}
+            {/* Right Column: Education, Real Logo Badges, Skills, Languages */}
             <div className="retro-col-side">
-              {/* EDUCATION */}
+              {/* EDUCATION (Schooling, Junior College, B.Tech) */}
               <div className="retro-section-group">
                 <div className="retro-yellow-header-pill">
                   <span>EDUCATION</span>
@@ -274,7 +270,7 @@ export default function ResumePage({ onBack }) {
                 <div className="retro-side-entry">
                   <div className="retro-bullet-dot"></div>
                   <div className="retro-side-content">
-                    <span className="retro-date-tag">2024 – 2028 (Pursuing)</span>
+                    <span className="retro-date-tag">2024 – 2028 (Currently Pursuing)</span>
                     <h4 className="retro-school-name">B.Tech in Computer Science & Engineering</h4>
                     <p className="retro-school-inst">Engineering College</p>
                     <p className="retro-school-details">Specializing in Frontend Engineering, AI Applications, and Data Structures & Algorithms.</p>
@@ -302,30 +298,33 @@ export default function ResumePage({ onBack }) {
                 </div>
               </div>
 
-              {/* TOOLS & TECHNOLOGIES WITH LOGO BADGES */}
+              {/* TOOLS & SKILLS WITH REAL LOGOS (Python, Java, React, JS, C++, Docker, etc.) */}
               <div className="retro-section-group">
                 <div className="retro-yellow-header-pill">
-                  <span>TOOLS & TECH</span>
+                  <span>SKILLS & TOOLS</span>
                 </div>
 
-                <div className="retro-tools-grid">
+                <div className="retro-real-logos-grid">
                   {toolLogos.map((tool, idx) => (
                     <div 
                       key={idx} 
-                      className="retro-tool-badge"
-                      style={{ backgroundColor: tool.bg, color: tool.color }}
+                      className="retro-real-logo-card"
+                      style={{ backgroundColor: tool.bg, borderColor: tool.border }}
                       title={tool.name}
                     >
-                      <span className="tool-logo-text">{tool.label}</span>
+                      <div className="real-logo-icon">
+                        {tool.component}
+                      </div>
+                      <span className="real-logo-name">{tool.name}</span>
                     </div>
                   ))}
                 </div>
               </div>
 
-              {/* CORE SKILLS */}
+              {/* CORE COMPETENCIES */}
               <div className="retro-section-group">
                 <div className="retro-yellow-header-pill">
-                  <span>CORE SKILLS</span>
+                  <span>CORE COMPETENCIES</span>
                 </div>
 
                 <div className="retro-skills-cloud">
@@ -334,9 +333,9 @@ export default function ResumePage({ onBack }) {
                   <span className="skill-chip">FAISS Vector Search & RAG</span>
                   <span className="skill-chip">JavaScript (ES6+)</span>
                   <span className="skill-chip">Python & FastAPI</span>
-                  <span className="skill-chip">C / C++ & Java</span>
+                  <span className="skill-chip">Java & C / C++</span>
                   <span className="skill-chip">Node.js & Express.js</span>
-                  <span className="skill-chip">MongoDB & SQL Databases</span>
+                  <span className="skill-chip">MongoDB & MySQL</span>
                   <span className="skill-chip">Docker & CI/CD Pipelines</span>
                   <span className="skill-chip">Interdisciplinary IoT Systems</span>
                   <span className="skill-chip">REST APIs & Webhooks</span>
