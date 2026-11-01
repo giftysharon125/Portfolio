@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Folder, Terminal, Zap, ExternalLink, ChevronDown, ChevronUp, Droplet, Sparkles, Gamepad2 } from 'lucide-react';
+import { GithubIcon } from './SocialIcons';
 import { MINI_PROJECTS } from '../data/projectsData';
 
 export default function MiniProjects() {
@@ -31,7 +32,7 @@ export default function MiniProjects() {
           </div>
           <div>
             <h3>Tiny Builds & Experiments</h3>
-            <p>Mini utilities, scripts, and playground projects from my engineering desk</p>
+            <p>Mini utilities, interactive storefronts & playgrounds from my engineering desk</p>
           </div>
         </div>
 
@@ -47,15 +48,33 @@ export default function MiniProjects() {
             <div key={item.id} className="mini-card">
               <div className="mini-card-top">
                 <div className="mini-icon">{getMiniIcon(item.icon)}</div>
-                <a 
-                  href={item.link} 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="mini-link-btn"
-                  title="View Repository"
-                >
-                  <ExternalLink size={14} />
-                </a>
+                <div className="mini-card-actions">
+                  {item.demo && (
+                    <a 
+                      href={item.demo} 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="mini-link-pill live-demo"
+                      title="Live Demo Preview"
+                      aria-label={`${item.title} Live Demo`}
+                    >
+                      <ExternalLink size={12} />
+                      <span>Live Demo</span>
+                    </a>
+                  )}
+                  {item.link && (
+                    <a 
+                      href={item.link} 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="mini-link-pill github"
+                      title="View GitHub Repository"
+                      aria-label={`${item.title} GitHub Repository`}
+                    >
+                      <GithubIcon size={13} />
+                    </a>
+                  )}
+                </div>
               </div>
 
               <h4 className="mini-title">{item.title}</h4>

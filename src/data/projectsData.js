@@ -93,36 +93,6 @@ export const PROJECTS_DATA = [
     featured: true
   },
   {
-    id: 'scoopiella',
-    title: 'Scoopiella — Joy In Every Scoop',
-    category: 'Frontend Engineering / Responsive Web / UI Design',
-    filterCategory: 'Frontend',
-    secondaryFilters: ['Web'],
-    badge: 'Responsive Web Storefront',
-    shortDescription: 'Delightful, responsive storefront web application for handcrafted gourmet ice cream featuring playful animations and interactive flavor discovery.',
-    mascot: 'coffee',
-    iconName: 'Sparkles',
-    problem: 'Modern artisanal confectionery brands need high-energy, memorable digital storefronts that translate physical dessert experiences into enticing online discovery journeys.',
-    solution: 'Designed and engineered an engaging multi-page web platform showcasing handcrafted ice creams with custom CSS animations, signature flavor showcases, and smooth ordering flows.',
-    architecture: 'Semantic HTML5 structure -> Modular CSS3 styling & responsive grid systems -> Interactive vanilla JavaScript handlers -> Google Fonts (Fredoka) & FontAwesome -> GitHub Pages deployment.',
-    technologies: [
-      'HTML5', 'CSS3', 'JavaScript', 'Responsive Web Design',
-      'Google Fonts (Fredoka)', 'FontAwesome', 'UI/UX Design', 'GitHub Pages'
-    ],
-    highlights: [
-      'Multi-page interactive experience with Home, Flavors, Gallery, and Order sections',
-      'Custom CSS keyframe animations, vibrant palette, and card hover micro-interactions',
-      'Interactive Signature Flavors showcase (Cloudberry Bliss, Matcha Dream, Berry Galaxy)',
-      'Mobile-first responsive navigation and clean order call-to-actions'
-    ],
-    learned: 'Color harmony for consumer food brands, performance-oriented CSS transitions without heavy libraries, and accessible navigation patterns.',
-    challenges: 'Balancing playful visual aesthetics with fast page load speeds and seamless responsiveness across desktop, tablet, and mobile browsers.',
-    future: 'Add interactive scoop-builder customization widget and shopping cart state management.',
-    github: 'https://github.com/giftysharon125/Scoopiella',
-    demo: 'https://giftysharon125.github.io/Scoopiella/',
-    featured: true
-  },
-  {
     id: 'smart-belt',
     title: 'SmartBelt — Wearable Health & Safety System',
     category: 'IoT / Wearable Hardware / Embedded / Interdisciplinary',
@@ -216,11 +186,12 @@ export const PROJECTS_DATA = [
 export const MINI_PROJECTS = [
   {
     id: 'scoopiella',
-    title: 'Scoopiella — Cute Ice Cream Shop 🍦',
-    tech: 'HTML5 / CSS3 / JavaScript',
-    desc: 'Delightful editorial website for an artisanal ice cream parlour featuring custom sundae building & flavor menus.',
+    title: 'Scoopiella — Joy In Every Scoop 🍨',
+    tech: 'HTML5 / CSS3 / JavaScript / UI',
+    desc: 'Delightful artisanal gourmet ice cream storefront featuring playful CSS keyframe animations, signature flavors showcase, and responsive order UI.',
     icon: 'IceCream',
-    link: 'https://github.com/giftysharon125/Scoopiella'
+    link: 'https://github.com/giftysharon125/Scoopiella',
+    demo: 'https://giftysharon125.github.io/Scoopiella/'
   },
   {
     id: 'memory-game',

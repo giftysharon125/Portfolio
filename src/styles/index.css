@@ -1426,6 +1426,61 @@ html.dark .navbar-header {
   margin-bottom: 8px;
 }
 
+.mini-card-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.mini-link-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: var(--radius-full);
+  border: 1.5px solid var(--border-color);
+  background: var(--bg-card);
+  color: var(--text-main);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.mini-link-pill:hover {
+  transform: translateY(-1.5px);
+  box-shadow: 1.5px 1.5px 0px var(--border-color);
+}
+
+.mini-link-pill.live-demo {
+  background: #E8F5E9;
+  color: #1B5E20;
+  border-color: #81C784;
+}
+
+.mini-link-pill.live-demo:hover {
+  background: #C8E6C9;
+  color: #0A3610;
+  border-color: #4CAF50;
+}
+
+.mini-link-pill.github {
+  background: var(--bg-card);
+  color: var(--text-main);
+  padding: 3px 6px;
+}
+
+.mini-link-pill.github:hover {
+  background: var(--accent-sage-subtle);
+  color: var(--accent-sage-dark);
+}
+
+.dark .mini-link-pill.live-demo {
+  background: rgba(46, 125, 50, 0.25);
+  color: #A5D6A7;
+  border-color: #388E3C;
+}
+
 .mini-title {
   font-size: 0.98rem;
   font-weight: 800;
