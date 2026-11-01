@@ -52,8 +52,10 @@ export default function TerminalModal({ isOpen, onClose }) {
 
       case 'achievements':
       case 'awards':
+      case 'certs':
+      case 'certifications':
         newHistory.push({
-          text: '🏆 Hackathon Achievements:\n• National Level Hackathon: Top 12 Finalist (Rank 7) for Campus Infrastructure AI Agent\n• Smart India Hackathon (SIH 2026): College Top Performer for SmartBelt Wearable Safety System\n• Smart India Hackathon (SIH 2025): College Internal Round Qualified for BlueSprout AI Rainwater Harvesting Platform',
+          text: '📜 Certifications & Experience:\n• 2-Month Applied AI Residency Internship (Capabl, Cert: CPBL26PI014)\n• Deloitte Australia Data Analytics Job Simulation (Forage, Cert: erWNErRsYDm7hqfSq)\n• AWS Cloud Practitioner Essentials (Amazon Web Services)\n• Python for Agentic AI Workshop (Capabl, Cert: CPBLtf25py535)\n\n🏆 Hackathon Achievements:\n• National Level Hackathon: Top 12 Finalist (Rank 7) for Campus Infrastructure AI Agent\n• Smart India Hackathon (SIH 2026): College Top Performer for SmartBelt Wearable Safety System\n• Smart India Hackathon (SIH 2025): College Internal Round Qualified for BlueSprout AI Rainwater Harvesting Platform',
           type: 'success'
         });
         break;

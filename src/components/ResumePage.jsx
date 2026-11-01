@@ -138,6 +138,47 @@ export default function ResumePage({ onBack }) {
           <div className="retro-resume-columns">
             {/* Left Column: Achievements, Experience, Projects */}
             <div className="retro-col-main">
+              {/* EXPERIENCE & INTERNSHIP */}
+              <div className="retro-section-group">
+                <div className="retro-yellow-header-pill">
+                  <span>EXPERIENCE & INTERNSHIPS</span>
+                </div>
+
+                <div className="retro-timeline-list">
+                  <div className="retro-entry-card">
+                    <div className="retro-bullet-dot"></div>
+                    <div className="retro-entry-content">
+                      <div className="retro-entry-meta">
+                        <span className="retro-date-tag">May 2026 – July 2026</span>
+                        <span className="retro-rank-tag">2-Month Internship</span>
+                      </div>
+                      <h3 className="retro-entry-title">Applied AI Residency Intern — Capabl</h3>
+                      <p className="retro-entry-subtitle">Agentic AI Saksham · NASSCOM Incubated · Startup India</p>
+                      <ul className="retro-entry-points">
+                        <li>Completed an intensive 2-month applied AI residency engineering real-world agentic AI workflows and Python tool-calling pipelines.</li>
+                        <li>Commended for technical acumen and practical problem-solving approach in delivering high-standard AI project outcomes. (Cert ID: CPBL26PI014).</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div className="retro-entry-card">
+                    <div className="retro-bullet-dot"></div>
+                    <div className="retro-entry-content">
+                      <div className="retro-entry-meta">
+                        <span className="retro-date-tag">June 2026</span>
+                        <span className="retro-rank-tag">Deloitte Australia</span>
+                      </div>
+                      <h3 className="retro-entry-title">Data Analytics Job Simulation — Deloitte</h3>
+                      <p className="retro-entry-subtitle">Deloitte Australia · Issued by Forage</p>
+                      <ul className="retro-entry-points">
+                        <li>Completed hands-on data analytics job simulation focused on analyzing datasets, identifying trends, forensic technology, and creating visualizations.</li>
+                        <li>Delivered actionable business recommendations based on statistical findings and forensic technology insights. (Cert ID: erWNErRsYDm7hqfSq).</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               {/* ACHIEVEMENTS & HONORS */}
               <div className="retro-section-group">
                 <div className="retro-yellow-header-pill">
@@ -302,8 +343,8 @@ export default function ResumePage({ onBack }) {
                   <div className="retro-side-content">
                     <span className="retro-date-tag">2024 – 2028 (Currently Pursuing)</span>
                     <h4 className="retro-school-name">B.Tech in Computer Science & Engineering</h4>
-                    <p className="retro-school-inst">Engineering College</p>
-                    <p className="retro-school-details">Specializing in Frontend Engineering, AI Applications, and Data Structures & Algorithms.</p>
+                    <p className="retro-school-inst">Anil Neerukonda Institute of Technology and Sciences (ANITS)</p>
+                    <p className="retro-school-details">Specializing in Frontend Engineering, Applied AI & Multi-Agent Systems, and Data Structures & Algorithms.</p>
                   </div>
                 </div>
 
@@ -324,6 +365,33 @@ export default function ResumePage({ onBack }) {
                     <h4 className="retro-school-name">Secondary School Certificate (10th Standard)</h4>
                     <p className="retro-school-inst">High School</p>
                     <p className="retro-school-details">Completed with Distinction; foundational mathematics, science, and initial introduction to computer programming.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* CERTIFICATIONS */}
+              <div className="retro-section-group">
+                <div className="retro-yellow-header-pill">
+                  <span>CERTIFICATIONS</span>
+                </div>
+
+                <div className="retro-side-entry">
+                  <div className="retro-bullet-dot"></div>
+                  <div className="retro-side-content">
+                    <span className="retro-date-tag">May 2026</span>
+                    <h4 className="retro-school-name">AWS Cloud Practitioner Essentials</h4>
+                    <p className="retro-school-inst">Amazon Web Services (AWS)</p>
+                    <p className="retro-school-details">Cloud architecture, EC2 compute, S3 storage, IAM security, and AWS global infrastructure models.</p>
+                  </div>
+                </div>
+
+                <div className="retro-side-entry">
+                  <div className="retro-bullet-dot"></div>
+                  <div className="retro-side-content">
+                    <span className="retro-date-tag">Jan 2026</span>
+                    <h4 className="retro-school-name">Python for Agentic AI Workshop</h4>
+                    <p className="retro-school-inst">Capabl · Agentic AI Saksham</p>
+                    <p className="retro-school-details">Hands-on Python architectures for autonomous agents, tool schemas, and LLM reasoning workflows. (ID: CPBLtf25py535).</p>
                   </div>
                 </div>
               </div>

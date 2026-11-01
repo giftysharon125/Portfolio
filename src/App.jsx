@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Projects from './components/Projects';
 import Achievements from './components/Achievements';
+import Certifications from './components/Certifications';
 import Skills from './components/Skills';
 import EngineeringWorkflow from './components/EngineeringWorkflow';
 import DeveloperJourney from './components/DeveloperJourney';
@@ -90,6 +91,8 @@ export default function App() {
         <SocialBannerStrip onOpenTerminal={() => setTerminalOpen(true)} />
 
         <Achievements />
+
+        <Certifications />
 
         <Skills />
         <EngineeringWorkflow />

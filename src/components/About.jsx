@@ -21,13 +21,14 @@ export default function About() {
       id: 'btech',
       level: 'Undergraduate Degree',
       degree: 'B.Tech in Computer Science & Engineering',
-      institution: 'Engineering College',
+      institution: 'Anil Neerukonda Institute of Technology and Sciences (ANITS)',
       period: '2024 – 2028',
       status: 'Currently Pursuing',
-      badge: 'B.Tech CSE',
+      badge: 'B.Tech CSE · ANITS',
       icon: GraduationCap,
       highlights: [
-        'Specializing in Frontend Engineering & Applied AI Systems.',
+        'Anil Neerukonda Institute of Technology and Sciences (ANITS).',
+        'Specializing in Frontend Engineering, Applied AI & Multi-Agent Systems.',
         'Core Academic Foundation: Data Structures & Algorithms, Object-Oriented Programming, DBMS, Computer Networks, and Operating Systems.',
         'Double Smart India Hackathon (SIH) Internal Qualifier (SIH 2025 BlueSprout & SIH 2026 SmartBelt Top Performer) & National Hackathon Rank 7 Finalist.'
       ]
