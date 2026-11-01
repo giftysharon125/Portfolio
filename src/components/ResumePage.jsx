@@ -98,12 +98,12 @@ export default function ResumePage({ onBack }) {
             <div className="retro-avatar-box">
               <div className="retro-avatar-circle">
                 <img 
-                  src="/images/profile-real-enhanced.jpg" 
+                  src="./images/profile-real-enhanced.jpg" 
                   alt="Gifty Sharon" 
                   className="retro-resume-avatar-img"
                   onError={(e) => {
                     e.target.onerror = null;
-                    e.target.src = '/images/profile.jpg';
+                    e.target.src = './images/profile.jpg';
                   }}
                 />
               </div>
