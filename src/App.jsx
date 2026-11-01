@@ -15,7 +15,7 @@ import ResumePage from './components/ResumePage';
 import TerminalModal from './components/TerminalModal';
 import EasterEggs from './components/EasterEggs';
 import DesktopFolderShortcuts from './components/DesktopFolderShortcuts';
-import SocialBannerStrip from './components/SocialBannerStrip';
+import SectionDivider from './components/SectionDivider';
 import './styles/index.css';
 
 export default function App() {
@@ -82,22 +82,31 @@ export default function App() {
 
       <main>
         <Hero onOpenTerminal={() => setTerminalOpen(true)} />
-        <SocialBannerStrip onOpenTerminal={() => setTerminalOpen(true)} />
+        <SectionDivider />
         
         <About />
-        <SocialBannerStrip onOpenTerminal={() => setTerminalOpen(true)} />
+        <SectionDivider />
 
         <Projects />
-        <SocialBannerStrip onOpenTerminal={() => setTerminalOpen(true)} />
+        <SectionDivider />
 
         <Achievements />
+        <SectionDivider />
 
         <Certifications />
+        <SectionDivider />
 
         <Skills />
+        <SectionDivider />
+
         <EngineeringWorkflow />
+        <SectionDivider />
+
         <DeveloperJourney />
+        <SectionDivider />
+
         <GitHubSection />
+        <SectionDivider />
 
         <Contact />
       </main>

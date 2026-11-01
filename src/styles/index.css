@@ -298,6 +298,35 @@ button {
    SOCIAL BANNER STRIP
    ========================================================================== */
 
+/* ==========================================================================
+   RETRO SAGE GREEN SECTION DIVIDER STRIP (NO LOGOS)
+   ========================================================================== */
+
+.retro-section-divider {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+
+.retro-divider-bar {
+  width: 100%;
+  height: 28px;
+  background-color: var(--accent-sage);
+  border-top: 2.5px solid var(--border-color);
+  border-bottom: 2.5px solid var(--border-color);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+html.dark .retro-divider-bar {
+  background-color: var(--accent-sage-dark);
+}
+
 .social-banner-strip {
   background: var(--accent-sage);
   border-top: 2px solid var(--border-color);
