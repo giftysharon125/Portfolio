@@ -3992,3 +3992,47 @@ html.dark .lang-fill {
   height: 100%;
   border: none;
 }
+
+/* Retro Resume Entry Link Pills */
+.retro-entry-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.retro-link-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 10px;
+  background: var(--bg-card);
+  border: 1.5px solid var(--border-color);
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 700;
+  font-family: var(--font-heading);
+  color: var(--text-heading);
+  text-decoration: none;
+  box-shadow: 1.5px 1.5px 0px var(--border-color);
+  transition: all var(--transition-fast);
+}
+
+.retro-link-pill:hover {
+  background: var(--accent-terracotta);
+  color: #FFFFFF;
+  border-color: var(--border-color);
+  transform: translate(-1px, -1px);
+  box-shadow: 2px 2px 0px var(--border-color);
+}
+
+.retro-link-pill.live {
+  background: #E8EDE0;
+  color: #3B4B2E;
+  border-color: #5D6D4D;
+}
+
+.retro-link-pill.live:hover {
+  background: var(--accent-sage);
+  color: #FFFFFF;
+}

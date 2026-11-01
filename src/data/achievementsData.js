@@ -15,7 +15,8 @@ export const ACHIEVEMENTS_DATA = [
       'Demonstrated working hardware-to-cloud prototype under strict hackathon evaluation criteria.',
       'Recognized for high practical utility and potential social impact.'
     ],
-    github: 'https://github.com/giftysharon125/SmartBelt.git'
+    github: 'https://github.com/giftysharon125/SmartBelt.git',
+    live: 'https://smartbelt-ten.vercel.app/'
   },
   {
     id: 'sih-2025-bluesprout',
@@ -52,6 +53,7 @@ export const ACHIEVEMENTS_DATA = [
       'Built autonomous decision logic analyzing facility loads, predictive maintenance, and institutional resource routing.',
       'Praised by jury for architectural depth, clear multi-agent design, and crisp data presentation.'
     ],
-    github: 'https://github.com/giftysharon125/Campus-infrastructure-decision-support-agent.git'
+    github: 'https://github.com/giftysharon125/Campus-infrastructure-decision-support-agent.git',
+    live: 'https://campus-infrastructure-decision-support-agent-i4jdxqgc4pbpclfu7.streamlit.app/'
   }
 ];

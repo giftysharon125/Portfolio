@@ -208,6 +208,14 @@ export default function ResumePage({ onBack }) {
                         <li>Secured 7th place with an autonomous AI Decision Support Agent handling facility loads, anomaly detection, and optimization analytics.</li>
                         <li>Praised for clean multi-agent architecture and intuitive executive dashboard.</li>
                       </ul>
+                      <div className="retro-entry-links">
+                        <a href="https://campus-infrastructure-decision-support-agent-i4jdxqgc4pbpclfu7.streamlit.app/" target="_blank" rel="noopener noreferrer" className="retro-link-pill live">
+                          Live App ↗
+                        </a>
+                        <a href="https://github.com/giftysharon125/Campus-infrastructure-decision-support-agent.git" target="_blank" rel="noopener noreferrer" className="retro-link-pill">
+                          GitHub ↗
+                        </a>
+                      </div>
                     </div>
                   </div>
 
@@ -224,6 +232,14 @@ export default function ResumePage({ onBack }) {
                         <li>Qualified internal selection as Top Performers in our college with an interdisciplinary team.</li>
                         <li>Engineered sensor telemetry, emergency trigger logic, and automated SMS/WhatsApp guardian notification dispatch.</li>
                       </ul>
+                      <div className="retro-entry-links">
+                        <a href="https://smartbelt-ten.vercel.app/" target="_blank" rel="noopener noreferrer" className="retro-link-pill live">
+                          Live App ↗
+                        </a>
+                        <a href="https://github.com/giftysharon125/SmartBelt.git" target="_blank" rel="noopener noreferrer" className="retro-link-pill">
+                          GitHub ↗
+                        </a>
+                      </div>
                     </div>
                   </div>
 
@@ -240,6 +256,14 @@ export default function ResumePage({ onBack }) {
                         <li>Qualified internal college selection round for Smart India Hackathon 2025 with the BlueSprout platform.</li>
                         <li>Built responsive web application featuring AI rooftop rainwater potential assessment, catchment calculations, and community savings tracking.</li>
                       </ul>
+                      <div className="retro-entry-links">
+                        <a href="https://kartikey369-ind.github.io/BlueSprout-SIH25/" target="_blank" rel="noopener noreferrer" className="retro-link-pill live">
+                          Live App ↗
+                        </a>
+                        <a href="https://github.com/kartikey369-ind/BlueSprout-SIH25" target="_blank" rel="noopener noreferrer" className="retro-link-pill">
+                          GitHub ↗
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -263,6 +287,11 @@ export default function ResumePage({ onBack }) {
                         <li>Architected emergency workflow handling WhatsApp webhooks for automated distress signaling and location broadcasting.</li>
                         <li>Implemented dead-man's-switch overdue check-in logic and natural language command parsing using LangChain and FAISS vector store.</li>
                       </ul>
+                      <div className="retro-entry-links">
+                        <a href="https://github.com/giftysharon125/project-saathi" target="_blank" rel="noopener noreferrer" className="retro-link-pill">
+                          GitHub ↗
+                        </a>
+                      </div>
                     </div>
                   </div>
 
@@ -277,6 +306,14 @@ export default function ResumePage({ onBack }) {
                         <li>Designed goal-directed autonomous agents aggregating infrastructure telemetry to forecast equipment degradation.</li>
                         <li>Delivered automated institutional recommendation reports and predictive resource allocation models.</li>
                       </ul>
+                      <div className="retro-entry-links">
+                        <a href="https://campus-infrastructure-decision-support-agent-i4jdxqgc4pbpclfu7.streamlit.app/" target="_blank" rel="noopener noreferrer" className="retro-link-pill live">
+                          Live App ↗
+                        </a>
+                        <a href="https://github.com/giftysharon125/Campus-infrastructure-decision-support-agent.git" target="_blank" rel="noopener noreferrer" className="retro-link-pill">
+                          GitHub ↗
+                        </a>
+                      </div>
                     </div>
                   </div>
 
@@ -291,6 +328,14 @@ export default function ResumePage({ onBack }) {
                         <li>Smart India Hackathon 2025 internal round qualified project for rooftop water conservation.</li>
                         <li>Built AI rooftop image recommendation module, manual catchment potential calculator, and water savings tracking dashboard.</li>
                       </ul>
+                      <div className="retro-entry-links">
+                        <a href="https://kartikey369-ind.github.io/BlueSprout-SIH25/" target="_blank" rel="noopener noreferrer" className="retro-link-pill live">
+                          Live App ↗
+                        </a>
+                        <a href="https://github.com/kartikey369-ind/BlueSprout-SIH25" target="_blank" rel="noopener noreferrer" className="retro-link-pill">
+                          GitHub ↗
+                        </a>
+                      </div>
                     </div>
                   </div>
 
@@ -305,6 +350,14 @@ export default function ResumePage({ onBack }) {
                         <li>Engineered wearable smart belt combining posture/accelerometer sensor fusion with real-time fall detection algorithms.</li>
                         <li>Integrated emergency cloud alert pipeline communicating coordinates instantaneously to designated guardians.</li>
                       </ul>
+                      <div className="retro-entry-links">
+                        <a href="https://smartbelt-ten.vercel.app/" target="_blank" rel="noopener noreferrer" className="retro-link-pill live">
+                          Live App ↗
+                        </a>
+                        <a href="https://github.com/giftysharon125/SmartBelt.git" target="_blank" rel="noopener noreferrer" className="retro-link-pill">
+                          GitHub ↗
+                        </a>
+                      </div>
                     </div>
                   </div>
 
@@ -319,6 +372,14 @@ export default function ResumePage({ onBack }) {
                         <li>Engineered document processing pipeline extracting experiment aims, reagent lists, and procedures from technical lab PDFs into structured schema.</li>
                         <li>Integrated conversational RAG over multi-page laboratory manuals with precise section and page citations.</li>
                       </ul>
+                      <div className="retro-entry-links">
+                        <a href="https://lab-assistant-ai.streamlit.app/" target="_blank" rel="noopener noreferrer" className="retro-link-pill live">
+                          Live App ↗
+                        </a>
+                        <a href="https://github.com/shadrakbabu/lab-assistant-ai.git" target="_blank" rel="noopener noreferrer" className="retro-link-pill">
+                          GitHub ↗
+                        </a>
+                      </div>
                     </div>
                   </div>
 

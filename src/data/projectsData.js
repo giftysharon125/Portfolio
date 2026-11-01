@@ -58,6 +58,7 @@ export const PROJECTS_DATA = [
     challenges: 'Structuring reliable tool-calling and guardrails to prevent agent hallucinations in budgetary and infrastructure capacity evaluations.',
     future: 'Integrate IoT sensor live feeds and digital twin 3D campus floor plan overlays.',
     github: 'https://github.com/giftysharon125/Campus-infrastructure-decision-support-agent.git',
+    demo: 'https://campus-infrastructure-decision-support-agent-i4jdxqgc4pbpclfu7.streamlit.app/',
     featured: true
   },
   {
@@ -117,6 +118,7 @@ export const PROJECTS_DATA = [
     challenges: 'Eliminating false-positive fall detection during normal physical movements through sensor threshold tuning and filtering.',
     future: 'Develop ultra-compact PCB form factor and integrate edge AI gesture recognition.',
     github: 'https://github.com/giftysharon125/SmartBelt.git',
+    demo: 'https://smartbelt-ten.vercel.app/',
     featured: true
   },
   {
@@ -146,6 +148,7 @@ export const PROJECTS_DATA = [
     challenges: 'Parsing complex tabular lab data and formatted math formulas cleanly out of scanned or custom-formatted PDFs.',
     future: 'Support interactive circuit diagram analysis and automatic lab report draft generation.',
     github: 'https://github.com/shadrakbabu/lab-assistant-ai.git',
+    demo: 'https://lab-assistant-ai.streamlit.app/',
     featured: true
   },
   {
