@@ -15,6 +15,7 @@ import ResumePage from './components/ResumePage';
 import TerminalModal from './components/TerminalModal';
 import EasterEggs from './components/EasterEggs';
 import DesktopFolderShortcuts from './components/DesktopFolderShortcuts';
+import SocialBannerStrip from './components/SocialBannerStrip';
 import SectionDivider from './components/SectionDivider';
 import './styles/index.css';
 
@@ -82,9 +83,11 @@ export default function App() {
 
       <main>
         <Hero onOpenTerminal={() => setTerminalOpen(true)} />
-        <SectionDivider />
+        {/* First Divider: Keeps the interactive social logos */}
+        <SocialBannerStrip onOpenTerminal={() => setTerminalOpen(true)} />
         
         <About />
+        {/* From 2nd divider onwards: Clean solid dividers without logos */}
         <SectionDivider />
 
         <Projects />
