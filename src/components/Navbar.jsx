@@ -14,7 +14,6 @@ export default function Navbar({ onOpenResume, onOpenTerminal, darkMode, setDark
     { id: 'achievements', label: 'Achievements' },
     { id: 'certifications', label: 'Certifications' },
     { id: 'skills', label: 'Skills' },
-    { id: 'workflow', label: 'How I Build' },
     { id: 'journey', label: 'Journey' },
     { id: 'contact', label: 'Contact' },
   ];

@@ -8,9 +8,12 @@ import {
   CheckCircle2,
   Code2,
   Sparkle,
-  Compass
+  Compass,
+  User,
+  Heart
 } from 'lucide-react';
 import { CoffeeMascot } from './CuteMascots';
+import CuteComputer from './CuteComputer';
 
 export default function About() {
   const educationHistory = [
@@ -87,27 +90,49 @@ export default function About() {
               </p>
             </div>
 
-            {/* Narrative Hero Card - Centered, Spacious & Clean */}
-            <div className="about-narrative-clean">
-              <div className="about-narrative-card full-width">
-                <div className="narrative-badge">
-                  <span>Frontend Engineering × Intelligent AI</span>
+            {/* Narrative with Profile Visual Card matching reference aesthetic */}
+            <div className="about-showcase-container">
+              <div className="about-showcase-card">
+                {/* Profile Portrait Visual in Retro Frame */}
+                <div className="about-portrait-wrap">
+                  <div className="about-portrait-frame">
+                    <img 
+                      src="/images/profile.jpg" 
+                      alt="Gifty Sharon" 
+                      className="about-portrait-img"
+                      onError={(e) => {
+                        e.target.onerror = null;
+                        e.target.src = '/images/profile-avatar.svg';
+                      }}
+                    />
+                  </div>
+                  <div className="about-portrait-badge">
+                    <span className="badge-pulse-dot"></span>
+                    <span>Frontend & AI Engineer</span>
+                  </div>
                 </div>
-                <h3>Engineering With Curiosity, Design & Purpose</h3>
-                <p>
-                  I am a <strong>Computer Science Engineering student</strong> at <strong>Anil Neerukonda Institute of Technology and Sciences (ANITS)</strong> specializing in <strong>Frontend Engineering</strong> with a deep passion for building <strong>Applied AI Applications</strong>.
-                </p>
-                <p>
-                  I thrive at the intersection of design and intelligence — building user experiences that feel fluid, responsive, and natural in modern React ecosystems, while architecting smart backend pipelines with LangChain, FAISS vector search, and autonomous multi-agent frameworks.
-                </p>
-                <p>
-                  Whether it is designing an emergency safety system with WhatsApp webhooks (Project Saathi), engineering an autonomous campus infrastructure decision support agent that ranked 7th nationally, or building an interdisciplinary IoT wearable for Smart India Hackathon, I love taking complex real-world challenges and transforming them into accessible, human-centered software.
-                </p>
 
-                <div className="about-mascot-footer">
-                  <CoffeeMascot size={42} />
-                  <div className="mascot-quote">
-                    <span>"Driven by curiosity, clean code, and solving real user problems."</span>
+                {/* Narrative Text */}
+                <div className="about-showcase-content">
+                  <div className="narrative-badge">
+                    <span>Frontend Engineering × Intelligent AI</span>
+                  </div>
+                  <h3>Engineering With Curiosity, Design & Purpose</h3>
+                  <p>
+                    I am a <strong>Computer Science Engineering student</strong> at <strong>Anil Neerukonda Institute of Technology and Sciences (ANITS)</strong> specializing in <strong>Frontend Engineering</strong> with a deep passion for building <strong>Applied AI Applications</strong>.
+                  </p>
+                  <p>
+                    I thrive at the intersection of design and intelligence — building user experiences that feel fluid, responsive, and natural in modern React ecosystems, while architecting smart backend pipelines with LangChain, FAISS vector search, and autonomous multi-agent frameworks.
+                  </p>
+                  <p>
+                    Whether it is designing an emergency safety system with WhatsApp webhooks (Project Saathi), engineering an autonomous campus infrastructure decision support agent that ranked 7th nationally, or building an interdisciplinary IoT wearable for Smart India Hackathon, I love taking complex real-world challenges and transforming them into accessible, human-centered software.
+                  </p>
+
+                  <div className="about-mascot-footer">
+                    <CoffeeMascot size={42} />
+                    <div className="mascot-quote">
+                      <span>"Driven by curiosity, clean code, and solving real user problems."</span>
+                    </div>
                   </div>
                 </div>
               </div>

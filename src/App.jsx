@@ -6,7 +6,6 @@ import Projects from './components/Projects';
 import Achievements from './components/Achievements';
 import Certifications from './components/Certifications';
 import Skills from './components/Skills';
-import EngineeringWorkflow from './components/EngineeringWorkflow';
 import DeveloperJourney from './components/DeveloperJourney';
 import GitHubSection from './components/GitHubSection';
 import Contact from './components/Contact';
@@ -100,9 +99,6 @@ export default function App() {
         <SectionDivider />
 
         <Skills />
-        <SectionDivider />
-
-        <EngineeringWorkflow />
         <SectionDivider />
 
         <DeveloperJourney />

@@ -1,8 +1,24 @@
-import React from 'react';
-import { Award, Briefcase, BarChart3, Cloud, Bot, ExternalLink, Calendar, CheckCircle2, Sparkles, ShieldCheck } from 'lucide-react';
+import React, { useState } from 'react';
+import { 
+  Award, 
+  Briefcase, 
+  BarChart3, 
+  Cloud, 
+  Bot, 
+  ExternalLink, 
+  Calendar, 
+  CheckCircle2, 
+  Sparkles, 
+  ShieldCheck, 
+  Eye, 
+  X, 
+  Download 
+} from 'lucide-react';
 import { CERTIFICATIONS_DATA } from '../data/certificationsData';
 
 export default function Certifications() {
+  const [activeCert, setActiveCert] = useState(null);
+
   const getCertIcon = (iconName) => {
     switch (iconName) {
       case 'Briefcase': return <Briefcase size={22} className="text-indigo-600" />;
@@ -70,6 +86,29 @@ export default function Certifications() {
                     ))}
                   </ul>
 
+                  {/* View Certificate Button */}
+                  <div className="cert-actions-row">
+                    <button 
+                      className="view-cert-btn"
+                      onClick={() => setActiveCert(cert)}
+                      title={`Display ${cert.title}`}
+                    >
+                      <Eye size={15} className="mr-1.5" />
+                      <span>View Earned Certificate</span>
+                    </button>
+                    {cert.fileUrl && (
+                      <a 
+                        href={cert.fileUrl} 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="cert-open-btn"
+                        title="Open document in new tab"
+                      >
+                        <ExternalLink size={14} />
+                      </a>
+                    )}
+                  </div>
+
                   {cert.accreditations && (
                     <div className="cert-accreditations-footer">
                       <span className="accred-label">Accreditations:</span> {cert.accreditations}
@@ -81,6 +120,58 @@ export default function Certifications() {
           </div>
         </div>
       </div>
+
+      {/* Certificate Viewer Modal */}
+      {activeCert && (
+        <div className="cert-modal-overlay" onClick={() => setActiveCert(null)}>
+          <div className="cert-modal-window" onClick={(e) => e.stopPropagation()}>
+            <div className="os-window-header">
+              <div className="os-window-path">
+                <span>C:\GIFTY\certificates\{activeCert.id}</span>
+              </div>
+              <div className="os-window-controls">
+                <button className="os-close-btn" onClick={() => setActiveCert(null)}>✕</button>
+              </div>
+            </div>
+
+            <div className="cert-modal-body">
+              <div className="cert-modal-top-bar">
+                <div>
+                  <h3 className="cert-modal-title">{activeCert.title}</h3>
+                  <p className="cert-modal-sub">{activeCert.issuer} · {activeCert.date}</p>
+                </div>
+                <a 
+                  href={activeCert.fileUrl} 
+                  download 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="cert-modal-download-btn"
+                  title="Download Certificate"
+                >
+                  <Download size={15} className="mr-1.5" />
+                  <span>Download</span>
+                </a>
+              </div>
+
+              <div className="cert-frame-container">
+                {activeCert.fileType === 'image' ? (
+                  <img 
+                    src={activeCert.fileUrl} 
+                    alt={activeCert.title} 
+                    className="cert-display-image"
+                  />
+                ) : (
+                  <iframe 
+                    src={`${activeCert.fileUrl}#toolbar=0`} 
+                    title={activeCert.title} 
+                    className="cert-display-iframe"
+                  />
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 }

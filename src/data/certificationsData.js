@@ -10,6 +10,8 @@ export const CERTIFICATIONS_DATA = [
     type: 'Internship',
     icon: 'Briefcase',
     accentColor: '#6366F1',
+    fileUrl: '/certificates/capabl_internship.jpg',
+    fileType: 'image',
     description: 'Completed a 2-Month Project-Based Applied AI Residency Internship at Capabl. Commended for technical acumen and practical problem-solving approach while developing end-to-end AI applications aligned with high industry standards.',
     highlights: [
       '2-Month intensive Applied AI Residency working on real-world AI agent pipelines',
@@ -28,6 +30,8 @@ export const CERTIFICATIONS_DATA = [
     type: 'Job Simulation',
     icon: 'BarChart3',
     accentColor: '#86B817',
+    fileUrl: '/certificates/deloitte_analytics.pdf',
+    fileType: 'pdf',
     description: 'Completed hands-on data analytics job simulation focused on analyzing datasets, identifying trends, forensic technology, creating visualizations, and delivering actionable business recommendations.',
     highlights: [
       'Practical tasks in Data Analysis & Forensic Technology',
@@ -44,6 +48,8 @@ export const CERTIFICATIONS_DATA = [
     type: 'Cloud Certification',
     icon: 'Cloud',
     accentColor: '#FF9900',
+    fileUrl: '/certificates/aws_cloud_practitioner.pdf',
+    fileType: 'pdf',
     description: 'Earned official completion certificate in AWS Cloud Practitioner Essentials, covering core AWS cloud architectural concepts, compute (EC2), storage (S3), IAM security, and cloud deployment models.',
     highlights: [
       'AWS global cloud infrastructure & shared responsibility security model',
@@ -61,6 +67,8 @@ export const CERTIFICATIONS_DATA = [
     type: 'AI Workshop',
     icon: 'Bot',
     accentColor: '#8B5CF6',
+    fileUrl: '/certificates/capabl_agentic_ai.pdf',
+    fileType: 'pdf',
     description: 'Participated in a hands-on intensive workshop focused on Python programming specifically for Agentic AI architectures, tool-calling, autonomous decision loops, and LLM orchestration.',
     highlights: [
       'Python programming foundations for autonomous AI agents',

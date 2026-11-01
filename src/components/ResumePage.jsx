@@ -98,7 +98,15 @@ export default function ResumePage({ onBack }) {
           <div className="retro-profile-block">
             <div className="retro-avatar-box">
               <div className="retro-avatar-circle">
-                <CuteComputer placement="hero" />
+                <img 
+                  src="/images/profile.jpg" 
+                  alt="Gifty Sharon" 
+                  className="retro-resume-avatar-img"
+                  onError={(e) => {
+                    e.target.onerror = null;
+                    e.target.src = '/images/profile-avatar.svg';
+                  }}
+                />
               </div>
             </div>
 
