@@ -137,9 +137,9 @@ button {
 }
 
 .section-container {
-  max-width: 1160px;
+  max-width: 1320px;
   margin: 0 auto;
-  padding: 60px 24px;
+  padding: 60px 28px;
 }
 
 /* ==========================================================================
@@ -393,12 +393,13 @@ html.dark .navbar-header {
 }
 
 .navbar-container {
-  max-width: 1160px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 32px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 16px;
 }
 
 .navbar-brand {
@@ -409,8 +410,11 @@ html.dark .navbar-header {
 }
 
 .brand-mascot-icon {
-  width: 36px;
-  height: 30px;
+  width: 44px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .brand-text {
@@ -434,21 +438,23 @@ html.dark .navbar-header {
 .desktop-nav {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 4px;
   background: var(--bg-card);
-  padding: 5px 8px;
+  padding: 5px 10px;
   border-radius: var(--radius-full);
   border: 2px solid var(--border-color);
   box-shadow: 2px 2px 0px rgba(74, 86, 58, 0.15);
+  flex-wrap: nowrap;
 }
 
 .nav-link-btn {
-  padding: 6px 14px;
-  font-size: 0.88rem;
+  padding: 6px 12px;
+  font-size: 0.85rem;
   font-weight: 700;
   color: var(--text-muted);
   border-radius: var(--radius-full);
   transition: all var(--transition-fast);
+  white-space: nowrap;
 }
 
 .nav-link-btn:hover {
@@ -568,9 +574,9 @@ html.dark .navbar-header {
 }
 
 .hero-container {
-  max-width: 1160px;
+  max-width: 1320px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 28px;
   position: relative;
   z-index: 10;
 }
@@ -2805,7 +2811,7 @@ html.dark .navbar-header {
    ========================================================================== */
 
 .about-narrative-clean {
-  max-width: 900px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
