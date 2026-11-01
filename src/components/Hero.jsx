@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowRight, MessageSquare, Terminal, Sparkles } from 'lucide-react';
-import CuteComputer from './CuteComputer';
+import CurlyCompanion from './CurlyCompanion';
 import { 
   CoffeeMascot, 
   DatabaseMascot, 
@@ -98,10 +98,10 @@ export default function Hero({ onOpenTerminal }) {
 
             <div className="hero-mascot-universe">
               <div className="hero-computer-card">
-                <CuteComputer placement="hero" />
+                <CurlyCompanion placement="hero" />
                 <div className="computer-card-footer">
-                  <span className="mascot-tag">Gifty's Mascot Companion</span>
-                  <span className="mascot-status">Click computer to say hi! 👋</span>
+                  <span className="mascot-tag">Gifty's Companion</span>
+                  <span className="mascot-status">Click me to say hi! 👋</span>
                 </div>
               </div>
             </div>

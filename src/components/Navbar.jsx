@@ -51,7 +51,11 @@ export default function Navbar({ onOpenResume, onOpenTerminal, darkMode, setDark
       <div className="navbar-container">
         <div className="navbar-brand" onClick={() => scrollTo('home')}>
           <div className="brand-mascot-icon">
-            <CuteComputer placement="nav" />
+            <img 
+              src="/images/profile-curly.svg" 
+              alt="Gifty Sharon" 
+              className="brand-avatar-img"
+            />
           </div>
           <div className="brand-text">
             <span className="brand-name">Gifty Sharon</span>
