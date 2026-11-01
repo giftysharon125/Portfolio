@@ -344,6 +344,28 @@ export default function ResumePage({ onBack }) {
                     <div className="retro-bullet-dot"></div>
                     <div className="retro-entry-content">
                       <div className="retro-entry-meta">
+                        <span className="retro-tech-tag">HTML5 · CSS3 · JavaScript · Responsive UI · Fredoka</span>
+                      </div>
+                      <h3 className="retro-entry-title">Scoopiella — Handcrafted Ice Cream Storefront</h3>
+                      <ul className="retro-entry-points">
+                        <li>Engineered a vibrant, responsive multi-page confectionery web platform featuring dynamic flavor exploration, signature showcases, and gallery views.</li>
+                        <li>Designed custom CSS keyframe animations, responsive navigation, and mobile-friendly ordering flows.</li>
+                      </ul>
+                      <div className="retro-entry-links">
+                        <a href="https://giftysharon125.github.io/Scoopiella/" target="_blank" rel="noopener noreferrer" className="retro-link-pill live">
+                          Live App ↗
+                        </a>
+                        <a href="https://github.com/giftysharon125/Scoopiella" target="_blank" rel="noopener noreferrer" className="retro-link-pill">
+                          GitHub ↗
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="retro-entry-card">
+                    <div className="retro-bullet-dot"></div>
+                    <div className="retro-entry-content">
+                      <div className="retro-entry-meta">
                         <span className="retro-tech-tag">IoT Embedded · C/C++ · Python · Cloud Push</span>
                       </div>
                       <h3 className="retro-entry-title">SmartBelt — Interdisciplinary Wearable Safety System</h3>

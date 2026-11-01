@@ -3,6 +3,7 @@ import React from 'react';
 export default function ProjectFilters({ activeFilter, onFilterChange, counts }) {
   const filterOptions = [
     { id: 'All', label: 'All Projects' },
+    { id: 'Frontend', label: 'Frontend' },
     { id: 'AI', label: 'AI & ML' },
     { id: 'Backend', label: 'Backend' },
     { id: 'Hardware', label: 'IoT & Hardware' },

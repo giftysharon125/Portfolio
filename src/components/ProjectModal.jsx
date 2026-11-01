@@ -8,7 +8,8 @@ import {
   PhoneWhatsappMascot, 
   DockerContainerMascot,
   RobotMascot,
-  CloudMascot 
+  CloudMascot,
+  CoffeeMascot
 } from './CuteMascots';
 
 export default function ProjectModal({ project, onClose }) {
@@ -22,6 +23,8 @@ export default function ProjectModal({ project, onClose }) {
         return <RobotMascot size={56} />;
       case 'bluesprout':
         return <CloudMascot size={56} />;
+      case 'scoopiella':
+        return <CoffeeMascot size={56} tooltip="Scoopiella Treats 🍨" />;
       case 'smart-belt':
         return <div style={{ transform: 'scale(1.1)' }}><CuteComputer placement="nav" /></div>;
       case 'lab-manual-ai':

@@ -1,12 +1,13 @@
 import React from 'react';
-import { ExternalLink, ArrowUpRight, ShieldAlert, FileText, GitMerge, Building, Activity, Droplets, Trophy } from 'lucide-react';
+import { ExternalLink, ArrowUpRight, ShieldAlert, FileText, GitMerge, Building, Activity, Droplets, Trophy, Sparkles } from 'lucide-react';
 import { GithubIcon } from './SocialIcons';
 import { 
   PdfDocMascot, 
   PhoneWhatsappMascot, 
   DockerContainerMascot,
   RobotMascot,
-  CloudMascot 
+  CloudMascot,
+  CoffeeMascot
 } from './CuteMascots';
 import CuteComputer from './CuteComputer';
 import DevOpsPipeline from './DevOpsPipeline';
@@ -20,6 +21,8 @@ export default function ProjectCard({ project, onSelectProject }) {
         return <RobotMascot size={40} />;
       case 'bluesprout':
         return <CloudMascot size={40} />;
+      case 'scoopiella':
+        return <CoffeeMascot size={40} tooltip="Scoopiella Treats 🍨" />;
       case 'smart-belt':
         return <div style={{ transform: 'scale(0.8)' }}><CuteComputer placement="nav" /></div>;
       case 'lab-manual-ai':
@@ -37,6 +40,7 @@ export default function ProjectCard({ project, onSelectProject }) {
       case 'Building': return <Building size={20} className="text-blue-600" />;
       case 'Droplets': return <Droplets size={20} className="text-cyan-600" />;
       case 'Activity': return <Activity size={20} className="text-emerald-600" />;
+      case 'Sparkles': return <Sparkles size={20} className="text-amber-500" />;
       case 'FileText': return <FileText size={20} className="text-amber-600" />;
       case 'GitMerge': return <GitMerge size={20} className="text-blue-600" />;
       default: return <FileText size={20} className="text-purple-600" />;
