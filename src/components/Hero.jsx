@@ -99,7 +99,7 @@ export default function Hero({ onOpenTerminal }) {
               <div className="hero-portrait-card fullbody">
                 <div className="hero-portrait-frame fullbody-standing">
                   <img 
-                    src="/images/gifty-standing-character.png" 
+                    src="/images/gifty-anime-character.png" 
                     alt="Gifty Sharon — Frontend Engineer & AI Developer" 
                     className="hero-portrait-photo standing"
                     onError={(e) => {
