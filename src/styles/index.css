@@ -2507,6 +2507,7 @@ html.dark .navbar-header {
   color: #A6E3A1;
   font-weight: 700;
   margin-right: 8px;
+  white-space: nowrap;
 }
 
 .terminal-input {
@@ -2517,6 +2518,82 @@ html.dark .navbar-header {
   font-size: 0.88rem;
   width: 100%;
   outline: none;
+}
+
+/* ==========================================================
+   TERMINAL QUESTIONS TOOLBAR
+   ========================================================== */
+.terminal-questions-toolbar {
+  background: #11111B;
+  border-bottom: 1.5px solid #313244;
+  padding: 10px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.questions-toolbar-header {
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  color: #A6ADC8;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.questions-chips-scroller {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  max-height: 88px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.terminal-question-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: #1E1E2E;
+  color: #CDD6F4;
+  border: 1px solid #45475A;
+  border-radius: var(--radius-full);
+  padding: 3px 10px;
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  user-select: none;
+}
+
+.terminal-question-chip:hover {
+  background: #313244;
+  color: #F9E2AF;
+  border-color: #F9E2AF;
+  transform: translateY(-1px);
+}
+
+.chip-emoji {
+  font-size: 0.82rem;
+}
+
+.terminal-send-btn {
+  background: #313244;
+  color: #A6E3A1;
+  border: 1px solid #45475A;
+  border-radius: 4px;
+  padding: 4px 8px;
+  cursor: pointer;
+  margin-left: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease;
+}
+
+.terminal-send-btn:hover {
+  background: #45475A;
+  color: #F9E2AF;
 }
 
 .resume-modal-card {
@@ -4161,6 +4238,102 @@ html.dark .lang-fill {
 @keyframes ongoingPulse {
   0%, 100% { opacity: 1; transform: scale(1); }
   50% { opacity: 0.4; transform: scale(0.75); }
+}
+
+/* ==========================================================
+   HERO CS MASCOT COMPANION CARD (Interactive CLI Gateway)
+   ========================================================== */
+.hero-mascot-showcase {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.hero-mascot-interactive-card {
+  width: 100%;
+  max-width: 320px;
+  background: var(--bg-card);
+  border: 3px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 20px 18px 16px 18px;
+  box-shadow: 6px 6px 0px var(--border-color);
+  transition: all var(--transition-fast);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+}
+
+.hero-mascot-interactive-card:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 8px 8px 0px var(--border-color);
+  border-color: var(--accent-terracotta);
+}
+
+.mascot-click-hint {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  background: var(--accent-terracotta-light);
+  border: 1.5px solid var(--accent-terracotta);
+  border-radius: var(--radius-full);
+  font-family: var(--font-heading);
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--accent-terracotta);
+  margin-bottom: 12px;
+  box-shadow: 1.5px 1.5px 0px var(--border-color);
+  animation: pulse-soft 2s infinite ease-in-out;
+}
+
+@keyframes pulse-soft {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.04); }
+}
+
+.mascot-interactive-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  text-align: center;
+  margin-top: 10px;
+  padding-top: 12px;
+  border-top: 1.5px dashed var(--border-color);
+}
+
+.mascot-status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--accent-sage-subtle);
+  border: 1.5px solid var(--accent-sage);
+  border-radius: var(--radius-full);
+  padding: 3px 10px;
+  font-family: var(--font-heading);
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: var(--accent-sage-dark);
+}
+
+.mascot-online-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #10B981;
+  box-shadow: 0 0 6px #10B981;
+}
+
+.mascot-subtext {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+  margin: 0;
 }
 
 /* ==========================================================

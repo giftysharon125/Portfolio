@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight, MessageSquare, Terminal, Sparkles } from 'lucide-react';
+import CuteComputer from './CuteComputer';
 import { 
   CoffeeMascot, 
   DatabaseMascot, 
@@ -95,32 +96,29 @@ export default function Hero({ onOpenTerminal }) {
               </div>
             </div>
 
-            <div className="hero-portrait-showcase">
-              <div className="hero-portrait-card fullbody">
-                <div className="hero-portrait-frame fullbody-standing">
-                  <img 
-                    src="/images/gifty-anime-character.png" 
-                    alt="Gifty Sharon — Frontend Engineer & AI Developer" 
-                    className="hero-portrait-photo standing"
-                    onError={(e) => {
-                      e.target.onerror = null;
-                      e.target.src = '/images/profile-real-enhanced.jpg';
-                    }}
-                  />
-                  <div className="hero-portrait-badge top-left">
-                    <span>⚡ Frontend</span>
-                  </div>
-                  <div className="hero-portrait-badge bottom-right">
-                    <span>✨ Applied AI</span>
-                  </div>
+            <div className="hero-mascot-showcase">
+              <div 
+                className="hero-mascot-interactive-card"
+                onClick={onOpenTerminal}
+                role="button"
+                tabIndex={0}
+                title="Click me to open interactive terminal commands!"
+              >
+                <div className="mascot-click-hint">
+                  <Terminal size={14} className="animate-pulse mr-1 inline text-amber-600" />
+                  <span>Click to Ask Questions</span>
                 </div>
 
-                <div className="hero-portrait-footer">
-                  <div className="portrait-identity">
-                    <span className="portrait-status-dot"></span>
-                    <span className="portrait-name">Gifty Sharon</span>
+                <CuteComputer placement="hero" onOpenTerminal={onOpenTerminal} />
+
+                <div className="mascot-interactive-footer">
+                  <div className="mascot-status-pill">
+                    <span className="mascot-online-dot"></span>
+                    <span>CS Terminal Companion · Online</span>
                   </div>
-                  <span className="portrait-role">Frontend Engineer & AI Developer · CSE Student</span>
+                  <p className="mascot-subtext">
+                    Press me to open the CLI & ask about my skills, projects, and hackathons! 💻
+                  </p>
                 </div>
               </div>
             </div>
