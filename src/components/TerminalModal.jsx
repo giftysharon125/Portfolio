@@ -45,8 +45,16 @@ export default function TerminalModal({ isOpen, onClose }) {
 
       case 'projects':
         newHistory.push({
-          text: 'Featured Projects:\n1. Project Saathi (Emergency Safety WhatsApp Bot)\n2. Lab Manual Conversational AI Assistant\n3. DevOps CI/CD Automation Pipeline',
+          text: 'Featured Projects:\n1. Project Saathi (Emergency Safety WhatsApp Bot)\n2. Campus Infrastructure Decision Support Agent (National Hackathon Rank 7)\n3. SmartBelt (Smart India Hackathon Top Performer)\n4. Lab Manual Conversational AI Assistant\n5. DevOps CI/CD Automation Pipeline',
           type: 'response'
+        });
+        break;
+
+      case 'achievements':
+      case 'awards':
+        newHistory.push({
+          text: '🏆 Hackathon Achievements:\n• National Level Hackathon: Top 12 Finalist (Rank 7) for Campus Infrastructure AI Agent\n• Smart India Hackathon (SIH): College Top Performer for SmartBelt Wearable Safety System',
+          type: 'success'
         });
         break;
 

@@ -1,11 +1,13 @@
 import React from 'react';
-import { X, ExternalLink, CheckCircle2, AlertCircle, Sparkles, Layers, BookOpen, Lightbulb } from 'lucide-react';
+import { X, ExternalLink, CheckCircle2, AlertCircle, Sparkles, Layers, BookOpen, Lightbulb, Trophy } from 'lucide-react';
 import { GithubIcon } from './SocialIcons';
 import DevOpsPipeline from './DevOpsPipeline';
+import CuteComputer from './CuteComputer';
 import { 
   PdfDocMascot, 
   PhoneWhatsappMascot, 
-  DockerContainerMascot 
+  DockerContainerMascot,
+  RobotMascot 
 } from './CuteMascots';
 
 export default function ProjectModal({ project, onClose }) {
@@ -15,6 +17,10 @@ export default function ProjectModal({ project, onClose }) {
     switch(id) {
       case 'project-saathi':
         return <PhoneWhatsappMascot size={56} />;
+      case 'campus-infra-agent':
+        return <RobotMascot size={56} />;
+      case 'smart-belt':
+        return <div style={{ transform: 'scale(1.1)' }}><CuteComputer placement="nav" /></div>;
       case 'lab-manual-ai':
         return <PdfDocMascot size={56} />;
       case 'devops-cicd-demo':

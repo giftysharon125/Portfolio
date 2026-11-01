@@ -1,11 +1,12 @@
 import React from 'react';
-import { GraduationCap, Code, Server, Bot, Container, Briefcase, Sparkles } from 'lucide-react';
+import { GraduationCap, Code, Server, Bot, Container, Briefcase, Sparkles, Trophy } from 'lucide-react';
 import { JOURNEY_TIMELINE } from '../data/journeyData';
 
 export default function DeveloperJourney() {
   const getTimelineIcon = (iconName) => {
     switch (iconName) {
       case 'GraduationCap': return <GraduationCap size={18} className="text-purple-600" />;
+      case 'Trophy': return <Trophy size={18} className="text-amber-500" />;
       case 'Code': return <Code size={18} className="text-blue-600" />;
       case 'Server': return <Server size={18} className="text-emerald-600" />;
       case 'Bot': return <Bot size={18} className="text-amber-600" />;

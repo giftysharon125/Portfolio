@@ -2496,6 +2496,171 @@ html.dark .navbar-header {
   margin: 20px 0;
 }
 
+/* ==========================================================================
+   ACHIEVEMENTS & HONORS SECTION
+   ========================================================================== */
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 24px;
+}
+
+.achievement-card {
+  background: var(--bg-card);
+  border: 2px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  box-shadow: var(--shadow-retro);
+  display: flex;
+  flex-direction: column;
+  transition: all var(--transition-normal);
+  position: relative;
+}
+
+.achievement-card:hover {
+  border-color: var(--accent-terracotta);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-retro-hover);
+}
+
+.achievement-header-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.achievement-icon-wrap {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-md);
+  background: var(--accent-sage-subtle);
+  border: 1.5px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.achievement-badge {
+  font-size: 0.76rem;
+  font-weight: 800;
+  color: var(--accent-terracotta);
+  background: var(--accent-terracotta-light);
+  padding: 2px 10px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--accent-terracotta);
+  display: inline-block;
+  margin-bottom: 6px;
+}
+
+.achievement-title {
+  font-size: 1.22rem;
+  font-weight: 800;
+  color: var(--text-main);
+  line-height: 1.3;
+}
+
+.achievement-event {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--accent-sage-dark);
+  margin-top: 2px;
+}
+
+.achievement-summary {
+  font-size: 0.94rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.achievement-role-box {
+  background: var(--bg-secondary);
+  border: 1.5px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 8px 12px;
+  margin-bottom: 14px;
+  font-size: 0.86rem;
+  display: flex;
+  gap: 6px;
+}
+
+.role-label {
+  font-weight: 800;
+  color: var(--accent-terracotta);
+}
+
+.role-text {
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.achievement-points {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.achievement-points li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.point-bullet {
+  color: var(--accent-terracotta);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.achievement-footer {
+  margin-top: auto;
+  padding-top: 14px;
+  border-top: 1.5px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.project-tag {
+  font-size: 0.82rem;
+  color: var(--text-light);
+}
+
+.project-tag strong {
+  color: var(--text-main);
+}
+
+.achievement-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  background: var(--bg-secondary);
+  border: 1.5px solid var(--border-color);
+  border-radius: var(--radius-full);
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: var(--text-main);
+  transition: all var(--transition-fast);
+}
+
+.achievement-link-btn:hover {
+  background: var(--accent-terracotta);
+  color: #FFFFFF;
+  border-color: var(--accent-terracotta);
+  transform: translateY(-2px);
+}
+
 .fadeIn {
   animation: fadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }

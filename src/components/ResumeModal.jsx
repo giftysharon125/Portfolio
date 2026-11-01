@@ -1,5 +1,5 @@
 import React from 'react';
-import { X, Download, ExternalLink, Briefcase, GraduationCap, Code } from 'lucide-react';
+import { X, Download, ExternalLink, Briefcase, GraduationCap, Code, Trophy } from 'lucide-react';
 
 export default function ResumeModal({ isOpen, onClose }) {
   if (!isOpen) return null;
@@ -65,6 +65,31 @@ export default function ResumeModal({ isOpen, onClose }) {
                 <span className="resume-date">2024 – 2028</span>
               </div>
               <p className="resume-institution">Relevant Coursework: Data Structures & Algorithms, Backend System Architecture, Object Oriented Programming, DBMS, Computer Networks, Operating Systems.</p>
+            </div>
+          </div>
+
+          <div className="resume-section">
+            <h3 className="resume-sec-title">
+              <Trophy size={16} className="inline mr-2 text-purple-600" />
+              ACHIEVEMENTS & HACKATHONS
+            </h3>
+            <div className="resume-item">
+              <div className="resume-item-top">
+                <strong>National Level Hackathon — Top 12 Finalist (Rank 7)</strong>
+                <span className="resume-date">2024</span>
+              </div>
+              <p className="resume-institution">
+                Built Campus Infrastructure Decision Support Agent. Selected among top 12 teams nationwide and secured 7th position out of large national competitive entries.
+              </p>
+            </div>
+            <div className="resume-item">
+              <div className="resume-item-top">
+                <strong>Smart India Hackathon (SIH) — College Top Performer</strong>
+                <span className="resume-date">2024</span>
+              </div>
+              <p className="resume-institution">
+                Engineered SmartBelt — an interdisciplinary IoT wearable fall-detection and emergency broadcast system. Qualified internal selection as top performers.
+              </p>
             </div>
           </div>
 

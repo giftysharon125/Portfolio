@@ -32,6 +32,64 @@ export const PROJECTS_DATA = [
     featured: true
   },
   {
+    id: 'campus-infra-agent',
+    title: 'Campus Infrastructure Decision Support Agent',
+    category: 'AI Agents / Decision Intelligence / Optimization',
+    filterCategory: 'AI',
+    secondaryFilters: ['Backend'],
+    badge: 'National Hackathon Finalist (Rank 7)',
+    shortDescription: 'National-level hackathon AI agent providing automated analytics, predictive insights, and decision support for institutional campus infrastructure.',
+    mascot: 'robot',
+    iconName: 'Building',
+    problem: 'Campus administrative authorities struggle with siloed infrastructure data, slow anomaly detection, and subjective manual allocation of institutional resources.',
+    solution: 'Engineered an autonomous Multi-Agent Decision Support System that ingests real-time campus facility telemetry, predicts utilization patterns, detects facility degradation bottlenecks, and suggests optimized resource allocation strategies.',
+    architecture: 'Campus Data Ingestion Pipeline -> LangChain Decision Agent Core -> Vector & SQL Knowledge Base -> Predictive Optimization Engine -> Interactive Decision Dashboard.',
+    technologies: [
+      'Python', 'FastAPI', 'LangChain', 'AI Agents', 'OpenAI / Gemini API', 'Vector DB', 'Data Visualization'
+    ],
+    highlights: [
+      'Selected among Top 12 Teams Nationally (Secured 7th place)',
+      'Multi-agent decision logic with autonomous reasoning loops',
+      'Campus facility utilization forecasting & predictive maintenance',
+      'Automated administrative recommendation report generator',
+      'Interactive executive decision support interface'
+    ],
+    learned: 'Designing goal-driven autonomous agent workflows, handling multi-source facility datasets, and presenting high-stakes decision intelligence cleanly to administrators.',
+    challenges: 'Structuring reliable tool-calling and guardrails to prevent agent hallucinations in budgetary and infrastructure capacity evaluations.',
+    future: 'Integrate IoT sensor live feeds and digital twin 3D campus floor plan overlays.',
+    github: 'https://github.com/giftysharon125/Campus-infrastructure-decision-support-agent.git',
+    featured: true
+  },
+  {
+    id: 'smart-belt',
+    title: 'SmartBelt — Wearable Health & Safety System',
+    category: 'IoT / Wearable Hardware / Embedded / Interdisciplinary',
+    filterCategory: 'Hardware',
+    secondaryFilters: ['Backend'],
+    badge: 'Smart India Hackathon Top Performer',
+    shortDescription: 'Interdisciplinary IoT smart wearable belt with biometric sensors, automated fall/distress detection, and emergency cloud alerting.',
+    mascot: 'computer',
+    iconName: 'Activity',
+    problem: 'Vulnerable individuals, industrial workers, and elderly citizens face high fatality risks during unmonitored falls or medical emergencies without immediate distress signaling.',
+    solution: 'Collaborated across disciplines to design SmartBelt — a smart IoT wearable equipped with accelerometer, posture, and vital tracking sensors paired with automated cloud dispatch of emergency coordinates.',
+    architecture: 'Microcontroller / Embedded Sensor Nodes (ESP32/Arduino) -> Bluetooth/WiFi Telemetry Dispatch -> Cloud Alerting Server -> Emergency SMS / WhatsApp Guardian Push System.',
+    technologies: [
+      'IoT / Embedded Systems', 'ESP32 / Arduino', 'C / C++', 'Python / Node.js', 'Sensor Fusion', 'Emergency Alerting APIs'
+    ],
+    highlights: [
+      'Smart India Hackathon (SIH) Internal Round Top Performer',
+      'Interdisciplinary collaboration uniting hardware, firmware & software',
+      'Real-time posture, motion, and sudden fall detection algorithm',
+      'Automated emergency SOS trigger with GPS location broadcast',
+      'Low-power sensor telemetry and companion monitoring dashboard'
+    ],
+    learned: 'Interdisciplinary team leadership, bridging hardware sensor constraints with reliable backend event processing and real-time alerts.',
+    challenges: 'Eliminating false-positive fall detection during normal physical movements through sensor threshold tuning and filtering.',
+    future: 'Develop ultra-compact PCB form factor and integrate edge AI gesture recognition.',
+    github: 'https://github.com/giftysharon125/SmartBelt.git',
+    featured: true
+  },
+  {
     id: 'lab-manual-ai',
     title: 'Lab Manual Conversational AI Assistant',
     category: 'AI Engineering / Document Processing / Backend',

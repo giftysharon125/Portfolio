@@ -34,6 +34,20 @@ export default function DesktopFolderShortcuts({ onOpenResume }) {
           </div>
           <span className="folder-label">works</span>
         </button>
+
+        <button 
+          className="desktop-folder-btn" 
+          onClick={() => scrollTo('achievements')}
+          title="Honors & Achievements"
+        >
+          <div className="desktop-folder-icon">
+            <svg viewBox="0 0 54 44" fill="none" className="folder-svg">
+              <path d="M 4 8 C 4 5.79 5.79 4 8 4 L 20 4 C 22.2 4 24 5.79 24 8 L 24 10 L 46 10 C 48.2 10 50 11.79 50 14 L 50 36 C 50 38.2 48.2 40 46 40 L 8 40 C 5.79 40 4 38.2 4 36 Z" fill="#FDE769" stroke="#4A563A" strokeWidth="3" strokeLinejoin="round" />
+              <path d="M 4 16 L 50 16 L 46 40 L 8 40 Z" fill="#FEE870" stroke="#4A563A" strokeWidth="2.5" />
+            </svg>
+          </div>
+          <span className="folder-label">honors</span>
+        </button>
       </div>
 
       {/* Right Desktop Shortcuts */}

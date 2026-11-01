@@ -24,6 +24,14 @@ export const JOURNEY_TIMELINE = [
     icon: 'Server'
   },
   {
+    year: '2024',
+    title: 'Hackathon Top Performer & Finalist Honors',
+    role: 'Interdisciplinary & AI Engineer',
+    description: 'Secured Top Performer in Smart India Hackathon (SIH) internal round for SmartBelt, and achieved Rank 7 (Top 12 Finalists) nationally with the Campus Infrastructure Decision Support AI Agent.',
+    badge: 'Hackathons & Honors',
+    icon: 'Trophy'
+  },
+  {
     year: 'Advanced Milestone',
     title: 'AI Engineering & Applied Systems',
     role: 'LangChain, FAISS, Gemini/OpenAI & Twilio',
