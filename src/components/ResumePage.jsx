@@ -133,6 +133,11 @@ export default function ResumePage({ onBack }) {
                   <span>github.com/giftysharon125</span>
                 </a>
 
+                <a href="https://leetcode.com/u/_Giftyy_/" target="_blank" rel="noopener noreferrer" className="retro-contact-pill">
+                  <span className="pill-icon-badge leetcode">LC</span>
+                  <span>leetcode.com/u/_Giftyy_</span>
+                </a>
+
                 <div className="retro-contact-pill">
                   <span className="pill-icon-badge location">📍</span>
                   <span>India · Open to Remote & Relocation</span>

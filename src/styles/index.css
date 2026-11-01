@@ -367,6 +367,7 @@ html.dark .retro-divider-bar {
 
 .social-pill-btn.linkedin { background-color: #0077B5; }
 .social-pill-btn.github { background-color: #24292E; }
+.social-pill-btn.leetcode { background-color: #FFA116; }
 .social-pill-btn.email { background-color: var(--accent-terracotta); }
 .social-pill-btn.terminal { background-color: #EC4899; }
 
@@ -3370,6 +3371,7 @@ html.dark .retro-resume-sheet {
 .pill-icon-badge.mail { background: #EA4335; }
 .pill-icon-badge.linkedin { background: #0077B5; }
 .pill-icon-badge.github { background: #24292E; }
+.pill-icon-badge.leetcode { background: #FFA116; }
 .pill-icon-badge.location { background: var(--accent-sage); font-size: 0.8rem; }
 
 /* 2-Column Layout */

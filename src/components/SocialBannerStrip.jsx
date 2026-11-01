@@ -1,5 +1,5 @@
 import React from 'react';
-import { LinkedinIcon, GithubIcon } from './SocialIcons';
+import { LinkedinIcon, GithubIcon, LeetCodeIcon } from './SocialIcons';
 import { Mail, Terminal } from 'lucide-react';
 
 export default function SocialBannerStrip({ onOpenTerminal }) {
@@ -28,6 +28,16 @@ export default function SocialBannerStrip({ onOpenTerminal }) {
         title="GitHub Profile"
       >
         <GithubIcon size={20} />
+      </a>
+
+      <a 
+        href="https://leetcode.com/u/_Giftyy_/" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        className="social-pill-btn leetcode"
+        title="LeetCode Profile (_Giftyy_)"
+      >
+        <LeetCodeIcon size={20} />
       </a>
 
       <button 

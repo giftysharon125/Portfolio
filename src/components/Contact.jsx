@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Mail, Send, CheckCircle2, AlertCircle, Sparkles } from 'lucide-react';
-import { GithubIcon, LinkedinIcon } from './SocialIcons';
+import { GithubIcon, LinkedinIcon, LeetCodeIcon } from './SocialIcons';
 import { CoffeeMascot, BugMascot } from './CuteMascots';
 
 export default function Contact() {
@@ -118,6 +118,22 @@ export default function Contact() {
                     <div>
                       <span className="link-label">GitHub</span>
                       <span className="link-value">github.com/giftysharon125</span>
+                    </div>
+                  </a>
+
+                  <a 
+                    href="https://leetcode.com/u/_Giftyy_/" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="contact-link-item"
+                    title="LeetCode Profile (_Giftyy_)"
+                  >
+                    <div className="link-icon-box bg-amber-100 text-amber-600">
+                      <LeetCodeIcon size={18} />
+                    </div>
+                    <div>
+                      <span className="link-label">LeetCode</span>
+                      <span className="link-value">leetcode.com/u/_Giftyy_</span>
                     </div>
                   </a>
                 </div>
