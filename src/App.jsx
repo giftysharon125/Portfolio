@@ -10,7 +10,7 @@ import DeveloperJourney from './components/DeveloperJourney';
 import GitHubSection from './components/GitHubSection';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import ResumeModal from './components/ResumeModal';
+import ResumePage from './components/ResumePage';
 import TerminalModal from './components/TerminalModal';
 import EasterEggs from './components/EasterEggs';
 import DesktopFolderShortcuts from './components/DesktopFolderShortcuts';
@@ -19,7 +19,7 @@ import './styles/index.css';
 
 export default function App() {
   const [darkMode, setDarkMode] = useState(false);
-  const [resumeOpen, setResumeOpen] = useState(false);
+  const [showFullResume, setShowFullResume] = useState(false);
   const [terminalOpen, setTerminalOpen] = useState(false);
 
   useEffect(() => {
@@ -30,16 +30,54 @@ export default function App() {
     }
   }, [darkMode]);
 
+  // Sync with browser hash routing for direct sharing #resume
+  useEffect(() => {
+    const handleHashChange = () => {
+      if (window.location.hash === '#resume') {
+        setShowFullResume(true);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else {
+        setShowFullResume(false);
+      }
+    };
+
+    if (window.location.hash === '#resume') {
+      setShowFullResume(true);
+    }
+
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, []);
+
+  const openResume = () => {
+    window.location.hash = 'resume';
+    setShowFullResume(true);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const closeResume = () => {
+    window.location.hash = '';
+    setShowFullResume(false);
+  };
+
+  if (showFullResume) {
+    return (
+      <div className="portfolio-app-root">
+        <ResumePage onBack={closeResume} />
+      </div>
+    );
+  }
+
   return (
     <div className="portfolio-app-root">
       <Navbar
-        onOpenResume={() => setResumeOpen(true)}
+        onOpenResume={openResume}
         onOpenTerminal={() => setTerminalOpen(true)}
         darkMode={darkMode}
         setDarkMode={setDarkMode}
       />
 
-      <DesktopFolderShortcuts onOpenResume={() => setResumeOpen(true)} />
+      <DesktopFolderShortcuts onOpenResume={openResume} />
 
       <main>
         <Hero onOpenTerminal={() => setTerminalOpen(true)} />
@@ -62,11 +100,6 @@ export default function App() {
       </main>
 
       <Footer />
-
-      <ResumeModal
-        isOpen={resumeOpen}
-        onClose={() => setResumeOpen(false)}
-      />
 
       <TerminalModal
         isOpen={terminalOpen}

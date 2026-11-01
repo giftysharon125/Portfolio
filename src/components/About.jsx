@@ -1,9 +1,70 @@
 import React, { useState } from 'react';
-import { BookOpen, Hammer, AlertTriangle, Bug, TrendingUp, Rocket, Sparkles } from 'lucide-react';
+import { 
+  BookOpen, 
+  Hammer, 
+  AlertTriangle, 
+  Bug, 
+  TrendingUp, 
+  Rocket, 
+  Sparkles, 
+  GraduationCap, 
+  School, 
+  Building2, 
+  Calendar,
+  CheckCircle2
+} from 'lucide-react';
 import { CoffeeMascot } from './CuteMascots';
 
 export default function About() {
   const [activeStage, setActiveStage] = useState(1);
+
+  const educationHistory = [
+    {
+      id: 'btech',
+      level: 'Undergraduate Degree',
+      degree: 'B.Tech in Computer Science & Engineering',
+      institution: 'Engineering College',
+      period: '2024 – 2028',
+      status: 'Current Pursuing',
+      badge: 'B.Tech CSE',
+      icon: GraduationCap,
+      highlights: [
+        'Specializing in Frontend Engineering & Intelligent AI Systems',
+        'Core Courses: Data Structures & Algorithms, DBMS, Operating Systems, Computer Networks',
+        'Smart India Hackathon (SIH) Internal Top Performer & National Hackathon Rank 7 Finalist'
+      ]
+    },
+    {
+      id: 'junior-college',
+      level: 'Senior Secondary / Intermediate (11th & 12th)',
+      degree: 'Junior College (MPC — Mathematics, Physics, Chemistry)',
+      institution: 'Junior College',
+      period: '2022 – 2024',
+      status: 'Completed',
+      badge: 'Junior College / Intermediate',
+      icon: Building2,
+      highlights: [
+        'Major focus in Advanced Mathematics, Physics, and Chemistry (MPC stream)',
+        'Built rigorous problem-solving foundation, analytical reasoning, and quantitative aptitude',
+        'Active participant in regional science exhibitions and computer programming seminars'
+      ]
+    },
+    {
+      id: 'schooling',
+      level: 'Secondary School Education (10th Standard)',
+      degree: 'Secondary School Certificate (SSC / High School)',
+      institution: 'High School',
+      period: 'Graduated 2022',
+      status: 'Completed with Distinction',
+      badge: 'High School / SSC',
+      icon: School,
+      highlights: [
+        'Strong academic distinction with consistent high grades in Mathematics & Science',
+        'First introduced to computers, basic coding concepts, and logic building',
+        'Co-curricular leadership in school technology clubs and cultural events'
+      ]
+    }
+  ];
 
   const philosophyStages = [
     {
@@ -67,7 +128,7 @@ export default function About() {
             <div className="section-header text-center">
               <span className="section-eyebrow">
                 <Sparkles size={14} className="inline mr-1.5" />
-                Background & Philosophy
+                Background, Education & Philosophy
               </span>
               <h2 className="section-title">A little about me</h2>
               <p className="section-subtitle">
@@ -75,6 +136,7 @@ export default function About() {
               </p>
             </div>
 
+            {/* Narrative & Philosophy Grid */}
             <div className="about-grid">
               <div className="about-narrative-card">
                 <h3>Designing Frontend Apps & AI Experiences</h3>
@@ -85,7 +147,7 @@ export default function About() {
                   I thrive at the intersection of design and intelligence — crafting smooth, responsive user interfaces in React & modern web frameworks while seamlessly connecting them to smart AI models like LangChain, FAISS RAG, and LLM APIs.
                 </p>
                 <p>
-                  My goal is to join an engineering team as a Frontend / AI Software Engineer where I can build delightful, high-impact web products that users love.
+                  From building emergency safety assistants to autonomous campus decision support agents and interdisciplinary wearable IoT prototypes, I take pride in taking real human problems and solving them through clean, thoughtful code.
                 </p>
 
                 <div className="about-mascot-footer">
@@ -140,6 +202,48 @@ export default function About() {
                 </div>
               </div>
             </div>
+
+            {/* Academic Education Journey */}
+            <div className="education-timeline-section">
+              <div className="education-sec-header">
+                <div className="edu-badge-tag">Academic Pathway</div>
+                <h3>Education & Academic Foundation</h3>
+                <p>My continuous learning journey from foundational schooling to junior college and undergraduate engineering.</p>
+              </div>
+
+              <div className="education-cards-grid">
+                {educationHistory.map((edu) => {
+                  const IconComp = edu.icon;
+                  return (
+                    <div key={edu.id} className="education-box-card">
+                      <div className="edu-card-top">
+                        <div className="edu-icon-wrap">
+                          <IconComp size={22} className="text-amber-600" />
+                        </div>
+                        <div className="edu-header-text">
+                          <span className="edu-badge-pill">{edu.badge}</span>
+                          <h4 className="edu-degree-title">{edu.degree}</h4>
+                          <div className="edu-sub-meta">
+                            <span className="edu-period"><Calendar size={13} className="inline mr-1" />{edu.period}</span>
+                            <span className="edu-status">• {edu.status}</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <ul className="edu-highlights-list">
+                        {edu.highlights.map((item, hIdx) => (
+                          <li key={hIdx}>
+                            <CheckCircle2 size={14} className="edu-check-icon" />
+                            <span>{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
