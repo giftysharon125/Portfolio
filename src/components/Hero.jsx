@@ -1,6 +1,5 @@
 import React from 'react';
 import { ArrowRight, MessageSquare, Terminal, Sparkles } from 'lucide-react';
-import CurlyCompanion from './CurlyCompanion';
 import { 
   CoffeeMascot, 
   DatabaseMascot, 
@@ -96,12 +95,32 @@ export default function Hero({ onOpenTerminal }) {
               </div>
             </div>
 
-            <div className="hero-mascot-universe">
-              <div className="hero-computer-card">
-                <CurlyCompanion placement="hero" />
-                <div className="computer-card-footer">
-                  <span className="mascot-tag">Gifty's Companion</span>
-                  <span className="mascot-status">Click me to say hi! 👋</span>
+            <div className="hero-portrait-showcase">
+              <div className="hero-portrait-card">
+                <div className="hero-portrait-frame">
+                  <img 
+                    src="/images/gifty-hero-portrait.png" 
+                    alt="Gifty Sharon — Frontend Engineer & AI Developer" 
+                    className="hero-portrait-photo"
+                    onError={(e) => {
+                      e.target.onerror = null;
+                      e.target.src = '/images/profile.jpg';
+                    }}
+                  />
+                  <div className="hero-portrait-badge top-left">
+                    <span>⚡ Frontend</span>
+                  </div>
+                  <div className="hero-portrait-badge bottom-right">
+                    <span>✨ Applied AI</span>
+                  </div>
+                </div>
+
+                <div className="hero-portrait-footer">
+                  <div className="portrait-identity">
+                    <span className="portrait-status-dot"></span>
+                    <span className="portrait-name">Gifty Sharon</span>
+                  </div>
+                  <span className="portrait-role">Frontend Engineer & AI Developer · CSE Student</span>
                 </div>
               </div>
             </div>
