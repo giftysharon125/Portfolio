@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Sun, Moon, FileText, Terminal } from 'lucide-react';
-import CuteComputer from './CuteComputer';
 
 export default function Navbar({ onOpenResume, onOpenTerminal, darkMode, setDarkMode }) {
   const [scrolled, setScrolled] = useState(false);

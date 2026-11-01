@@ -9,7 +9,6 @@ import {
   CloudMascot,
   CoffeeMascot
 } from './CuteMascots';
-import CuteComputer from './CuteComputer';
 import DevOpsPipeline from './DevOpsPipeline';
 
 export default function ProjectCard({ project, onSelectProject }) {
@@ -24,7 +23,7 @@ export default function ProjectCard({ project, onSelectProject }) {
       case 'scoopiella':
         return <CoffeeMascot size={40} tooltip="Scoopiella Treats 🍨" />;
       case 'smart-belt':
-        return <div style={{ transform: 'scale(0.8)' }}><CuteComputer placement="nav" /></div>;
+        return <RobotMascot size={40} />;
       case 'lab-manual-ai':
         return <PdfDocMascot size={40} />;
       case 'devops-cicd-demo':

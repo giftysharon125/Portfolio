@@ -2,7 +2,6 @@ import React from 'react';
 import { X, ExternalLink, CheckCircle2, AlertCircle, Sparkles, Layers, BookOpen, Lightbulb, Trophy } from 'lucide-react';
 import { GithubIcon } from './SocialIcons';
 import DevOpsPipeline from './DevOpsPipeline';
-import CuteComputer from './CuteComputer';
 import { 
   PdfDocMascot, 
   PhoneWhatsappMascot, 
@@ -26,7 +25,7 @@ export default function ProjectModal({ project, onClose }) {
       case 'scoopiella':
         return <CoffeeMascot size={56} tooltip="Scoopiella Treats 🍨" />;
       case 'smart-belt':
-        return <div style={{ transform: 'scale(1.1)' }}><CuteComputer placement="nav" /></div>;
+        return <RobotMascot size={56} />;
       case 'lab-manual-ai':
         return <PdfDocMascot size={56} />;
       case 'devops-cicd-demo':

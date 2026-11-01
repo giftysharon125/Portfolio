@@ -12,8 +12,6 @@ import {
   User,
   Heart
 } from 'lucide-react';
-import { CoffeeMascot } from './CuteMascots';
-import CuteComputer from './CuteComputer';
 
 export default function About() {
   const educationHistory = [
@@ -129,7 +127,9 @@ export default function About() {
                   </p>
 
                   <div className="about-mascot-footer">
-                    <CoffeeMascot size={42} />
+                    <div className="quote-sparkle-icon">
+                      <Sparkles size={24} className="text-amber-600" />
+                    </div>
                     <div className="mascot-quote">
                       <span>"Driven by curiosity, clean code, and solving real user problems."</span>
                     </div>

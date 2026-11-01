@@ -6,7 +6,6 @@ import {
   Calendar,
   CheckCircle2
 } from 'lucide-react';
-import CuteComputer from './CuteComputer';
 import { 
   PythonLogo, 
   JavaLogo, 
