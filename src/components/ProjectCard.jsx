@@ -51,7 +51,15 @@ export default function ProjectCard({ project, onSelectProject }) {
             {getIcon(project.iconName)}
           </div>
           <div>
-            <h3 className="card-title">{project.title}</h3>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+              <h3 className="card-title">{project.title}</h3>
+              {project.isOngoing && (
+                <span className="ongoing-tag-badge">
+                  <span className="ongoing-dot"></span>
+                  Ongoing
+                </span>
+              )}
+            </div>
             <span className="card-category">{project.category}</span>
           </div>
         </div>

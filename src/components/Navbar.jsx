@@ -52,9 +52,13 @@ export default function Navbar({ onOpenResume, onOpenTerminal, darkMode, setDark
         <div className="navbar-brand" onClick={() => scrollTo('home')}>
           <div className="brand-mascot-icon">
             <img 
-              src="/images/profile-curly.svg" 
+              src="/images/profile.jpg" 
               alt="Gifty Sharon" 
               className="brand-avatar-img"
+              onError={(e) => {
+                e.target.onerror = null;
+                e.target.src = '/images/profile-curly.svg';
+              }}
             />
           </div>
           <div className="brand-text">

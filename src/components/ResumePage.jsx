@@ -99,9 +99,13 @@ export default function ResumePage({ onBack }) {
             <div className="retro-avatar-box">
               <div className="retro-avatar-circle">
                 <img 
-                  src="/images/profile-curly.svg" 
+                  src="/images/profile.jpg" 
                   alt="Gifty Sharon" 
                   className="retro-resume-avatar-img"
+                  onError={(e) => {
+                    e.target.onerror = null;
+                    e.target.src = '/images/profile-curly.svg';
+                  }}
                 />
               </div>
             </div>
@@ -277,6 +281,7 @@ export default function ResumePage({ onBack }) {
                     <div className="retro-entry-content">
                       <div className="retro-entry-meta">
                         <span className="retro-tech-tag">React · Node · LangChain · FAISS · Twilio</span>
+                        <span className="retro-rank-tag" style={{ background: '#FEF3C7', color: '#92400E', borderColor: '#F59E0B' }}>Ongoing Project</span>
                       </div>
                       <h3 className="retro-entry-title">Project Saathi — Emergency Safety & Guardian System</h3>
                       <ul className="retro-entry-points">
