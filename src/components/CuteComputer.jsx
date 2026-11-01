@@ -9,10 +9,9 @@ export default function CuteComputer({ placement = 'hero', onOpenTerminal }) {
 
   const codePhrases = [
     '> whoami',
-    '> python -m saathi',
-    '> run_infra_agent()',
-    '> git commit -m "feat" 🚀',
-    '> ask --questions'
+    '> projects',
+    '> skills',
+    '> help'
   ];
 
   useEffect(() => {
@@ -182,7 +181,7 @@ export default function CuteComputer({ placement = 'hero', onOpenTerminal }) {
                 <tspan fill="#FDE769" className="cursor-blink">|</tspan>
               </text>
               <text x="44" y="91" fill="#8E9C83" fontFamily="Fira Code, monospace" fontSize="7.5">
-                gifty@anits:~$ [click to ask]
+                gifty:~$
               </text>
             </g>
           </g>

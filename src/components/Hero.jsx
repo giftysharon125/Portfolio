@@ -70,12 +70,8 @@ export default function Hero({ onOpenTerminal }) {
                 Frontend Engineer & AI Developer · CSE Student
               </h3>
 
-              <p className="hero-statement">
-                “Meaningful software starts with intention, clean code, and practical intelligence.”
-              </p>
-
               <p className="hero-description">
-                I'm a Frontend Engineer passionate about building delightful web interfaces, interactive applications, and AI-driven experiences that turn complex intelligence into seamless user products.
+                Building responsive web interfaces, interactive applications, and applied AI systems.
               </p>
 
               <div className="hero-cta-group">
@@ -114,11 +110,8 @@ export default function Hero({ onOpenTerminal }) {
                 <div className="mascot-interactive-footer">
                   <div className="mascot-status-pill">
                     <span className="mascot-online-dot"></span>
-                    <span>CS Terminal Companion · Online</span>
+                    <span>Online · Click to Run CLI</span>
                   </div>
-                  <p className="mascot-subtext">
-                    Press me to open the CLI & ask about my skills, projects, and hackathons! 💻
-                  </p>
                 </div>
               </div>
             </div>
